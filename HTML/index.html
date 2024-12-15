@@ -1,0 +1,236 @@
+<!--AQUI SERÁ O PORTFÓLIO FINAL, IGUAL O DO FIGMA
+RESPONSIVO está funcionando e responsivo.-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE HOSPEDAGEM PORTFOLIO</title>
+    <!-- Link do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../JAVASCRIPT/efeitoRolagem-onda.js">
+    <script src="../JAVASCRIPT/script.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="nav-bar">
+      <div class="logo">
+          <img src="../IMAGES/logo-ana-portfolio.png" style="width:6rem;"  alt="">
+      </div>
+      <div class="nav-list">
+          <ul>
+              <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+              <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+              <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+              <li class="nav-item"><a href="#contate-me" class="nav-link">Contate-me</a></li>
+          </ul>
+      </div>
+      <!-- <div class="login-button">
+          <button><a href="#">Entrar</a></button>
+      </div> -->
+
+      <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><img class="icon" src="../IMAGES/menu_white_36dp.svg" alt=""></button>
+      </div>
+  </nav>
+  <div class="mobile-menu">
+      <ul>
+          <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#contate-me" class="nav-link">Contate-me</a></li>
+      </ul>
+
+      <!-- <div class="login-button">
+          <button><a href="#">Entrar</a></button>
+      </div> -->
+  </div>
+</header>
+
+<!--SECTION HOME-->
+<section id="home" class="text-start text-light d-flex flex-column justify-content-center" style="height: 100vh; background-color: #1a1a1a;">
+  <!-- <div class="circulo-home" id="circulo-home">
+    <img src="../IMAGES/circulo.png" alt="circulo-home" style="margin-left: 196vh;">
+  </div> -->
+  <div class="container">
+    <div class="col-12 paragrafo-ola" id="paragrafo-ola">
+      <h2>Olá, meu nome é </h2>
+    </div>
+    <div class="col-12 nomes" id="nomes">
+      <h1 class="nome-branco" id="nome-branco" >Ana Beatriz</h1>
+      <h1 class="nome-rosa" id="nome-rosa" >Bento Broetto</h1>
+    </div>
+    <div class="col-12 dev" id="dev">
+        <h2 class="dev-branco">Eu sou</h2>
+        <h2 class="dev-rosa">Desenvolvedora Front-end</h2>
+        <h2 class="dev-branco">e</h2>
+        <h2 class="dev-rosa">Web-Design</h2>
+    </div>
+    <!--BOTOES LINKEDIN E GIT HUB-->
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/ana-beatriz-bento-broetto-27a075279/" target="_blank">Linkedin</a>
+        <a href="https://github.com/Ana-Beatriz12" target="_blank">Github</a>
+    </div>
+    <div class="img-container">
+          <div class="quadrado"></div> 
+          <div class="img">
+              <img src="../IMAGES/img-meninaCode-home.png" alt="Imagem" class="img-home">
+          </div>
+      </div>
+  </div>
+      <!-- <div class="social-media justify-content-center align-items-start mt-4" style="display: flex;">
+          <a href="#" class="btn btn-primary mx-2">GitHub</a>
+          <a href="#" class="btn btn-secondary mx-2">LinkedIn</a>
+        </div> -->    
+</section>  
+
+<!--SECTION SOBRE MIM-->
+<section id="sobre" class="sobre-mim" style="height: 200vh; background-color: #1a1a1a;">
+  <div class="onda-divisao-pages" id="onda-divisao-pages">
+    <img class="onda-divisao" src="../IMAGES/onda-divisao-pages.png">
+  </div>
+  <div class="container">
+    <div class="col-12 sobre-mim" id="sobre">
+      <h1>Sobre Mim:</h1>
+      <div class="container text-sobreMim" id="paragrafo-sobreMim">
+        <h3>Eu sou Ana Beatriz, estudante
+           de Tecnologia da Informação
+           na Universidade Federal de
+           Mato Grosso do Sul (UFMS) e
+           recentemente aprovada no curso
+           de Desenvolvimento de Sistemas
+           pelo Senac Hub Academy. Tenho
+           uma paixão especial pelo desenvolvimento
+           front-end, onde posso combinar minha criatividade
+           com habilidades técnicas para criar interfaces de
+           usuário intuitivas e atraentes.
+        </h3>
+      </div>
+          <div class="container img-container-sobre">
+            <div class="quadrado-sobre"></div> 
+              <div class="img-sobre">
+                <img src="../IMAGES/img-sobreMim.png" alt="Imagem" class="img-home">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container" id="container-mySkills">
+          <div class="col-12" id="principais-linguagens">
+            <h1>My Skills:</h1>
+          </div>
+        </div>
+  <div class="container-slide">
+    <div class="paginas-slide">
+      <img src="../IMAGES/icon-bootstrap.png" alt="">
+      <img src="../IMAGES/icon-javascript.png" alt="">
+      <img src="../IMAGES/icon-php.png" alt="">
+      <img src="../IMAGES/icon-css.png" alt="">
+      <img src="../IMAGES/icon-python.png" alt="">
+      <img src="../IMAGES/icon-html.png" alt="">
+      <img src="../IMAGES/icon-mysql.png" alt="">
+      <!--REPETIR AS IMAGENS-->
+      <img src="../IMAGES/icon-bootstrap.png" alt="">
+      <img src="../IMAGES/icon-javascript.png" alt="">
+      <img src="../IMAGES/icon-php.png" alt="">
+      <img src="../IMAGES/icon-css.png" alt="">
+      <img src="../IMAGES/icon-python.png" alt="">
+      <img src="../IMAGES/icon-html.png" alt="">
+      <img src="../IMAGES/icon-mysql.png" alt="">
+    </div>
+  </div>
+
+</section>
+
+
+<!--PAG PROJETOS -->
+<section id="projetos" class="projetos-carrossel" style="height: 170vh; background-color: #1a1a1a;">
+  <div class="onda-divisao-pages" id="onda-divisao-pages">
+    <img class="onda-divisao" src="../IMAGES/onda-divisao-pages.png">
+  </div>
+  <main class="cards" style="height: 220vh; background-color: #1a1a1a;">
+    <section class="card cream">
+      <div class="icon">
+        <img src="../IMAGES/img-cream.png" alt="card-icecream">
+      </div><br>
+      <h3>Ice Cream</h3>
+      <span>O site Ice Cream World, foi criado no figma,com um design
+        intuitivo e atraente que demonstra uma loja de sorvetes. <br> <br>
+        <!-- <a href="https://www.figma.com/design/mwJ10oaFqiL9ufaigDst3v/Ice-cream-word--broetto-site?node-id=0-1&node-type=canvas&t=8W99c7LVlwmVUxkb-0" target="_blank" >&#x1F368;VER PROJETO</a> -->
+        <button><a href="https://www.figma.com/design/mwJ10oaFqiL9ufaigDst3v/Ice-cream-word--broetto-site?node-id=0-1&node-type=canvas&t=8W99c7LVlwmVUxkb-0" target="_blank" >Saiba Mais!</a></button>
+      </span>
+    </section>
+    <section class="card tic">
+      <div class="icon">
+        <img src="../IMAGES/img-jogoVelha.png" alt="card-icecream">
+      </div>
+      <h3>Tic Tac Toe</h3>
+      <span>Aplicativo Mobile Tic Tac Toe App(Jogo da Velha),criado utilizando
+        a linguagem de programação Pyside6, e o google colab. <br> <br>
+        <!-- <a href="https://www.figma.com/design/3pkrBqA34B0pyMUP0h528p/Tic-Tac-Toe(Jogo-Da-Velha-Mobile)?node-id=0-1&node-type=canvas&t=4O5LAL7kXrYv7j9B-0" target="_blank" >&#x1F3AE;VER PROJETO</a> -->
+        <button><a href="https://www.figma.com/design/3pkrBqA34B0pyMUP0h528p/Tic-Tac-Toe(Jogo-Da-Velha-Mobile)?node-id=0-1&node-type=canvas&t=4O5LAL7kXrYv7j9B-0" target="_blank" >Saiba Mais!</a></button>
+      </span>
+    </section>
+    <section class="card teste">
+      <div class="icon">
+        <img src="../IMAGES/img-icon-hubfabricas.png" alt="card-icecream">
+      </div>
+      <h3>Hub Fábricas</h3>
+      <span>O site Hub Fábricas é destinado a empresas e ex alunos do Senac Hub academy,
+        onde encontra-se projetos criados por eles. <br> <br>
+        <button><a href="https://senachub.ms.senac.br/fabricas/" target="_blank" >Saiba Mais!</a></button>
+      </span>
+    </section>
+  </main>
+
+</section>
+
+
+<!--FOOTER RODAPÉ-->
+<footer id="contate-me" class="footer">
+        <p>Desenvolvido por Ana Beatriz Broetto</p>
+        <div class="social-media-rodape">
+            <a href="https://github.com/Ana-Beatriz12" target="_blank"><img src="../Images/image-rodape-git.png"></a>
+            <a href="https://www.linkedin.com/in/ana-beatriz-bento-broetto-27a075279/" target="_blank"><img
+                    src="../Images/image-rodape-linkedin.png"></a>
+            <a href="https://www.instagram.com/anabeatrizbia248?igsh=MWZ1d3pxYWRseXdpOQ%3D%3D" target="_blank"><img
+                    src="../Images/image-rodape-insta.png"></a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+<!--ONDAS-->
+<!-- Contêiner para as ondas -->
+<div class="wave-container">
+  <!-- Primeira Onda -->
+  <svg class="wave wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#6C63FF" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,240C384,245,480,203,576,176C672,149,768,139,864,122.7C960,107,1056,85,1152,106.7C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+  </svg>
+  
+  <!-- Segunda Onda -->
+  <svg class="wave wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#FF6F91" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,122.7C672,107,768,117,864,154.7C960,192,1056,256,1152,256C1248,256,1344,192,1392,160L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+  </svg>
+</div>
+
+
+
+
+
+
+ 
