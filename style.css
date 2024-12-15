@@ -163,7 +163,20 @@ html, body {
       }
   }
   
-  
+  .mobile-menu {
+    display: none; /* Oculta o menu mobile por padrão */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+}
+
+.mobile-menu.open {
+    display: block; /* Mostra o menu quando estiver aberto */
+}
   
   /*TERMNAR DE ASSISTR O VIDEO 13:20 
   https://youtu.be/P9cSVCGj0I0?si=KQfIjfl7VT4SEOjm
