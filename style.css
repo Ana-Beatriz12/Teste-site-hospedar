@@ -697,272 +697,225 @@ html, body {
   font-family: "Poppins", sans-serif;
   }
   
-  .cards .card{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    color:black;
   
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/*TESTE CARDS PRODUTOS*/
+
+
+.container-projetos{
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 133px;
+  margin-block: 234px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -123px;
+  gap: 100px 50px ;/*dá um espaçamento entre os cards, um ao lado do outro IMPORTANTE*/
+}
+
+.container-projetos .card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0,0,0,.15);
+  background: #f7f7f7;
+  transition: .5s;
+}
+ 
+.container-projetos .card:hover{
+  height: 400px;
+  /* transform:rotate(-5deg); */
+}
+
+.container-projetos .card .caixaImg{
+  position:absolute;
+  width: 300px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  top: 20px;
+  transition: .5s;
+}
+
+.container-projetos .card .caixaImg img{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+  border-radius: 7px;
+}
+
+.container-projetos .card .conteudo{
+  position:absolute;
+  top: 250px;
+  width: 100%;
+  height: 35px;
+  padding:0 30px;
+  overflow: hidden;
+  text-align: center;
+  transition: .5s;
+}
+
+.container-projetos .card:hover .conteudo{
+  top: 150px;
+  height: 250px;
+}
+
+.container-projetos .card:hover .caixaImg{
+  top: -80px;
+  scale: .75;
+  filter: drop-shadow(20px 0px 15px  #440101);
+}
+
+.container-projetos .card .conteudo h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--cor);
+}
+
+.container-projetos .card .conteudo p{
+  color: #333;
+}
+
+.container-projetos .card .conteudo a{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  background:var(--cor) ;
+  color: #fff;
+  border-color: var(--cor);
+  font-weight:500;
+  filter: drop-shadow(20px 0px 15px  var(--cor));
+  transition: .5s;
+}
+
+.container-projetos .card .conteudo a:hover{
+  background: black;
+  transition: .5s;
+}
+
+
+
+
+
+/*SOMBRA ATRÁS DOs CARD BLUR*/
+.container-projetos div.card.ice-cream{
+  box-shadow: 50px 20px 80px -30px  #d83494;
+}
+.container-projetos div.card.tic-tac{
+  box-shadow: 50px 20px 80px -30px  #55de2f;
+}
+.container-projetos div.card.hub-fabricas{
+  box-shadow: 50px 20px 80px -30px  #750192;
+}
+/* .container-projetos div.card.shakemelo{
+  box-shadow: 50px 20px 80px -30px  #f39302;
+} */
+
+
+ 
+/*RODAPÉ FOOTER*/
+  
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: #ef6abe;/*Cor do rodapé*/
+  /* background: linear-gradient(to right, salmon, DarkRed); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(239, 235, 235);
+  
+}
+
+.footer img{
+  width: 60px;
+  height: 60px;
+  align-items: start;
+  justify-content: start;
+  color: black;
+  margin-left: 34px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/*MEDIA QUERYS FOOTER RODAPÉ */
+@media only screen and (max-width: 375px) {
+
+  .footer {
+    height: 99px;
+    /*width: 3px;/*largura do rodapé */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
     
   }
-  
-  main.cards{
-    display: flex;
-    padding:32px;
-  }
-  
-  main.cards section.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .footer p{
     text-align: center;
-    background-color: #f7f5f5;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    height: 336px;
-    /* max-height: 336px; */
-    margin-left:32px;
+    text-transform: capitalize;/*capitalize*/
+    font-size: 20px;
   }
-  /*para mexer so na mergem do 1 card*/
-  main.cards section.card:first-child{
-    margin-left: 0;
-  
-  }
-  
-  main.cards section.card .icon{
-    width: 64px;
-    height: 64px;
-  
-  }
-  main.cards section.card img{
-    width: 100%;
-  }
-  
-  /*DANDO ESPAÇAMENTO ENTRE O TÍTULO E A IMAGEM*/
-  main.cards section.card h3{
-    margin: 16px 0;
-  }
-  main.cards section.card span{
-    font-weight: 300;
-    max-width: 240px;/*faz com que o texto quebre*/
-    font-size:90% ;/*diminui a font*/
-    margin-bottom: 16px;
-    
-  }
-  
-  /**/
-  main.cards section.card button{
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;/*deixa o texto todo maiusculo*/
-    border-radius: 32px;
-    border: 0;
-    cursor: pointer;
-    font-size: 70%;
-    font-weight: 500;
-    
-  }
-  
-  /*LINEAR GRADIENTE BUTTONS*/
-  main.cards section.card.cream button{
-    background: linear-gradient(to right, #ea6298, #e07a8e);
-  }
-  main.cards section.card.tic button{
-    background: linear-gradient(to right, #38a886, #2a654a);
-  }
-  main.cards section.card.teste button{
-    background: linear-gradient(to right, #41399e, #32ade6);
-  }
-  
-  /*SOMBRA ATRÁS DO CARD BLUR*/
-  main.cards section.card.cream{
-      box-shadow: 20px 20px 80px -30px  #ea6298;
-  }
-  main.cards section.card.tic{
-      box-shadow: 20px 20px 80px -30px  #38a886;
-  }
-  main.cards section.card.teste{
-      box-shadow: 20px 20px 80px -30px  #41399e;
-  }
-  
-  
-  @media screen and (max-width: 720px) {
-    main.cards {
-      flex-direction: column;
-    }
-    main.cards section.card{
-      margin-left: 0;
-      margin-bottom: 32px;
-    }
-  }
-  
-  @media screen and (max-width:375px){
-    main.cards {
-      margin-block: -20px;/*altura*/
-      /* margin-bottom: 233px; */
-      
-    }
-    main.cards section.card{
-      height:99vh;/*define o tamanho dos cards de largura height:634px*/
-      
-    }
-   
-    main.cards section.card span{
-      text-transform: lowercase;/*capitalize*/
-      font-size: 20px;
-    }
-    .footer{
-      /* margin-top: 126vh; */
-      margin-top: 810px;
-    }
-  }
-  
-  
-  @media (min-width:414px){
-    main.cards section.card{
-      height:99vh;/*define o tamanho dos cards de largura height:634px*/
-      
-    }
-    main.cards section.card h3{
-      text-transform: capitalize;/*capitalize*/
-      font-size: 30px;
-      
-    }
-    main.cards section.card span{
-      text-transform: lowercase;/*capitalize*/
-      font-size: 25px;  
-    }
-  
-    .footer{
-      margin-top: 76vh;
-    }
-  
-  }
-  
-  
-  @media (min-width:390px){
-    main.cards section.card{
-      height:99vh;/*define o tamanho dos cards de largura height:634px*/
-      
-    }
-    main.cards section.card h3{
-      text-transform: capitalize;/*capitalize*/
-      font-size: 30px;
-      
-    }
-    main.cards section.card span{
-      text-transform: lowercase;/*capitalize*/
-      font-size: 25px;  
-    }
-  
-    .footer{
-      margin-top: 76vh;
-    }
-  
-  }
-  
-  
-  
-  /*FIM PAG PROJETOS CARDS*/
-  
-  
-  /*RODAPÉ FOOTER*/
-  
-  
-  .footer{
-    width: 100%;
-    height: 100px;
-    background-color: #bf5a72;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(239, 235, 235);
-    
-  }
-  
+
   .footer img{
-    width: 60px;
-    height: 60px;
-    align-items: start;
-    justify-content: start;
-    color: black;
-    margin-left: 34px;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
+    height: 39px;
+    /* width: 33px; */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+}}
+
+
+@media only screen and (max-width: 414px) {
+
+  .footer {
+    height: 140px;
+    /*width: 3px;/*largura do rodapé */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+    
   }
-  
-  /*MEDIA QUERYS FOOTER RODAPÉ */
-  @media only screen and (max-width: 375px) {
-  
-    .footer {
-      height: 99px;
-      /*width: 3px;/*largura do rodapé */
-      display: inline-block;/*faz com que todos fiquem na mesma linha*/
-      
-    }
-    .footer p{
-      text-align: center;
-      text-transform: capitalize;/*capitalize*/
-      font-size: 20px;
-    }
-  
-    .footer img{
-      height: 39px;
-      /* width: 33px; */
-      display: inline-block;/*faz com que todos fiquem na mesma linha*/
-  }}
-  
-  
-  @media only screen and (max-width: 414px) {
-  
-    .footer {
-      height: 140px;
-      /*width: 3px;/*largura do rodapé */
-      display: inline-block;/*faz com que todos fiquem na mesma linha*/
-      
-    }
-    .footer p{
-      text-align: center;
-      text-transform: capitalize;/*capitalize*/
-      font-size: 25px;
-    }
-  
-    .footer img{
-      height: 49px;
-      /* width: 33px; */
-      display: inline-block;/*faz com que todos fiquem na mesma linha*/
-  }}
-  
-  
-  
-  
-  @media only screen and (max-width: 430px) {
-  
-    .footer {
-      height: 140px;
-      /*width: 3px;/*largura do rodapé */
-      display: inline-block;/*faz com que todos fiquem na mesma linha*/
-      
-    }
-    .footer p{
-      text-align: center;
-      text-transform: capitalize;/*capitalize*/
-      font-size: 25px;
-    }
-  
-    .footer img{
-      height: 49px;
-      /* width: 33px; */
-      display: inline-block;/*faz com que todos fiquem na mesma linha*/
-  }}
-  
-  
-  
-  
+  .footer p{
+    text-align: center;
+    text-transform: capitalize;/*capitalize*/
+    font-size: 25px;
+  }
+
+  .footer img{
+    height: 49px;
+    /* width: 33px; */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+}}
+
+@media only screen and (max-width: 430px) {
+
+  .footer {
+    height: 140px;
+    /*width: 3px;/*largura do rodapé */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+    
+  }
+  .footer p{
+    text-align: center;
+    text-transform: capitalize;/*capitalize*/
+    font-size: 25px;
+  }
+
+  .footer img{
+    height: 49px;
+    /* width: 33px; */
+    display: inline-block;/*faz com que todos fiquem na mesma linha*/
+}}
+
+
+
   
   
   /*ANIMAÇÃO ONDAS ;*/
