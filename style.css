@@ -1,9 +1,10 @@
 html,
 body {
   overflow-x: hidden; /*PREVINE O SCROOL HORIZONTAL*/
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  padding-top: 90px;
+  background-color: #1a1a1a
 }
-
 
 * {
   box-sizing: border-box;
@@ -508,7 +509,7 @@ TÍTULO*/
 
 section.portfolio {
   padding: 80px 4%;
-  
+
   box-sizing: border-box;
 }
 
@@ -537,7 +538,7 @@ section.portfolio .flex {
   background-position: 100% 100%;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -552,27 +553,23 @@ section.portfolio .flex {
   font-weight: 600;
   color: #ffff;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.overlay:hover{
+.overlay:hover {
   opacity: 1;
 }
 
-
-
 /*SOMBRA ATRÁS DO CARD BLUR*/
-main.cards section.img-port.fabricas{
-    box-shadow: 20px 20px 80px -30px  #ea6298;
+main.cards section.img-port.fabricas {
+  box-shadow: 20px 20px 80px -30px #ea6298;
 }
-main.cards section.img-port.cream{
-    box-shadow: 20px 20px 80px -30px  #38a886;
+main.cards section.img-port.cream {
+  box-shadow: 20px 20px 80px -30px #38a886;
 }
-main.cards section.img-port.emb{
-    box-shadow: 20px 20px 80px -30px  #41399e;
+main.cards section.img-port.emb {
+  box-shadow: 20px 20px 80px -30px #41399e;
 }
-
-
 
 /*FIM PAG PROJETOS CARDS*/
 
@@ -656,8 +653,6 @@ main.cards section.img-port.emb{
     display: inline-block; /*faz com que todos fiquem na mesma linha*/
   }
 }
-
-
 
 /*ANIMAÇÃO ONDAS ;*/
 

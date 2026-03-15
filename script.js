@@ -4,10 +4,10 @@ function menuShow() {
 
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
-        icon.src = "../../PORTFOLIO-PRETO-RESPONSIVO/IMAGES/menu_white_36dp.svg";
+        icon.src = "menu_white_36dp.svg";
     } else {
         menuMobile.classList.add('open');
-        icon.src = "../../PORTFOLIO-PRETO-RESPONSIVO/IMAGES/close_white_36dp.svg";
+        icon.src = "close_white_36dp.svg";
     }
 }
 
@@ -18,7 +18,7 @@ navLinks.forEach(link => {
         let menuMobile = document.querySelector('.mobile-menu');
         let icon = document.querySelector('.icon');
         menuMobile.classList.remove('open');
-        icon.src = "../../PORTFOLIO-PRETO-RESPONSIVO/IMAGES/menu_white_36dp.svg";
+        icon.src = "menu_white_36dp.svg";
     });
 });
 
