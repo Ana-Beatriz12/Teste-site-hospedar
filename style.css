@@ -2,8 +2,8 @@ html,
 body {
   overflow-x: hidden; /*PREVINE O SCROOL HORIZONTAL*/
   scroll-behavior: smooth;
-  padding-top: 90px;
-  background-color: #1a1a1a
+  
+ 
 }
 
 * {
@@ -34,6 +34,11 @@ body {
     margin-bottom: -62px;
     margin-block: -334px;
   }
+}
+
+section#home{
+  background-color: #1a1a1a;
+  padding-top: 100px;
 }
 
 /*ola, meu nome é*/
@@ -656,19 +661,14 @@ main.cards section.img-port.emb {
 
 /*ANIMAÇÃO ONDAS ;*/
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
-}
 
 .content-top,
 .content-bottom {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
   height: 100vh;
   display: flex;
 }
