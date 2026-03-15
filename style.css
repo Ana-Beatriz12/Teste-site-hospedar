@@ -1,242 +1,31 @@
 html,
 body {
-  overflow-x: hidden;
-  /*PREVINE O SCROOL HORIZONTAL*/
+  overflow-x: hidden; /*PREVINE O SCROOL HORIZONTAL*/
+   scroll-behavior: smooth;
 }
+
 
 * {
   box-sizing: border-box;
-  font-family: 'inter', sans-serif
+  font-family: "inter", sans-serif;
 }
-
-
-
 
 /*HEADER CABEÇALHO*/
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 * {
-  padding: 0;
-  margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
-/* Ajuste no cabeçalho */
-header {
-  background-color: #24252a;
-  box-shadow: 0px 3px 10px #464646;
-  position: relative;
-  /* Adicione esta linha */
-  z-index: 10;
-  /* Adicione esta linha */
-}
-
-/* Ajuste no menu mobile */
-.mobile-menu {
-  display: none;
-  position: absolute;
-  /* Mude para absolute */
-  top: 60px;
-  /* Ajuste conforme necessário */
-  left: 0;
-  width: 100%;
-  background-color: #24252a;
-  z-index: 9;
-
-  opacity: 0;
-  animation: fadeInDown 0.8s ease-out forwards;
-  /* Adicione esta linha */
-}
-
-
-/*ANIMAÇÃO SURGIMENTO HEADER MOBILE*/
-@keyframes fadeInDown {
-  from{
-    opacity: 0;
-    transform: translateY(-20px);/**/
-  } to{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Ajuste no botão do menu */
-.mobile-menu-icon {
-  display: none;
-  z-index: 11;
-  /* Adicione esta linha */
-}
-
-/* Media query para mobile */
-@media screen and (max-width: 730px) {
-  .nav-item {
-    display: none;
-  }
-
-  .login-button {
-    display: none;
-  }
-
-  .mobile-menu-icon {
-    display: block;
-  }
-
-  .mobile-menu.open {
-    display: flex;
-    /* Exibe o menu quando aberto */
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
-    margin-top: 4rem;
-    
-  }
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 6rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo h1 {
-  color: #fff;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-
-.nav-list ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-.nav-item {
-  margin: 0 15px;
-}
-
-.nav-link {
-  text-decoration: none;
-  font-size: 1.15rem;
-  color: #fff;
-  font-weight: 400;
-}
-
-.login-button button {
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  background-color: #0187a7;
-}
-
-.login-button button a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
-.mobile-menu-icon {
-  display: none;
-}
-
-.mobile-menu {
-  display: none;
-  transition: 2.5s ease-in-out;
-}
-
-@media screen and (max-width: 730px) {
-  .nav-bar {
-    padding: 1.5rem 4rem;
-  }
-
-  .nav-item {
-    display: none;
-  }
-
-  .login-button {
-    display: none;
-  }
-
-  .mobile-menu-icon {
-    display: block;
-  }
-
-  .mobile-menu-icon button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
-  }
-
-  .mobile-menu .nav-item {
-    display: block;
-    padding-top: 1.2rem;
-  }
-
-  .mobile-menu .login-button {
-    display: block;
-    padding: 1rem 2rem;
-  }
-
-  .mobile-menu .login-button button {
-    width: 100%;
-  }
-
-  .open {
-    display: block;
-  }
-}
-
-.mobile-menu {
-  display: none;
-  /* Oculta o menu mobile por padrão */
-  position: absolute;
-  top: 60px;
-  right: 0;
-  background-color: #1a1a1a;
-  width: 100%;
-  padding: 20px;
-  z-index: 100;
-}
-
-.mobile-menu.open {
-  display: block;
-  transition: 2.5s ease-in-out;
-  /* Mostra o menu quando estiver aberto */
-}
-
-/*TERMNAR DE ASSISTR O VIDEO 13:20 
-  https://youtu.be/P9cSVCGj0I0?si=KQfIjfl7VT4SEOjm
-  
-  */
 
 /*TIRANDO A MARGIN DO PARAGRAFO OLÁ MEU NOME É*/
 /*AQUI AJUSTA A ALTURA DE ESPAÇAMENTO DO PARAGRAFO OLA  EM MOBILE*/
 @media (max-width: 1217px) {
   .container #paragrafo-ola h2 {
     margin-bottom: -5px;
-    margin-top: 3px;
-    /*altura entre o cabeçalho eo titulo ola.*/
+    margin-top: 3px; /*altura entre o cabeçalho eo titulo ola.*/
   }
 }
-
 @media only screen and (max-width: 375px) {
-
   /*NOME BENTO BROETTO MOBILE*/
   .container #paragrafo-ola h2 {
     /* padding: 23px; */
@@ -246,7 +35,6 @@ header {
   }
 }
 
-
 /*ola, meu nome é*/
 .container #paragrafo-ola h2 {
   font-size: 2em;
@@ -254,7 +42,6 @@ header {
   padding-top: 123px;
   margin-bottom: 6px;
   color: white;
-
 }
 
 /*AQUI AJUSTA A ALTURA DE ESPAÇAMENTO DO PARAGRAFO OLA  EM MOBILE*/
@@ -262,33 +49,26 @@ header {
 @media (max-width: 1217px) {
   .container #paragrafo-ola h2 {
     margin-bottom: -5px;
-    margin-top: 3px;
-    /*altura entre o cabeçalho eo titulo ola.*/
+    margin-top: 3px; /*altura entre o cabeçalho eo titulo ola.*/
   }
 }
 
-
-@media (max-width:375px) {
+@media (max-width: 375px) {
   .container #paragrafo-ola h2 {
     margin-bottom: -5px;
     margin-top: 243px;
   }
 }
 
-
-
-
 /*TITULOS ANA E  DEV FRONT E WEB DESIGN(ROSA E BRANCO)*/
 .nomes {
   display: flex;
   /* justify-content: center; Alinha horizontalmente no centro */
-  flex-wrap: wrap;
-  /* Mantém a responsividade */
+  flex-wrap: wrap; /* Mantém a responsividade */
 }
 
 .nomes h1 {
-  margin: 0 -7px;
-  /* Espaçamento entre os nomes */
+  margin: 0 -7px; /* Espaçamento entre os nomes */
   padding-top: 35px;
   margin-left: 20px;
   padding: -20px;
@@ -297,9 +77,8 @@ header {
 
 /*ANA BEATRIZ*/
 .nome-branco {
-  color: white
+  color: white;
 }
-
 /*BENTO BROETTO*/
 .nome-rosa {
   color: rgb(216, 128, 199);
@@ -307,18 +86,14 @@ header {
 
 /*AQUI AJUSTA O TITULO BENTO BROETTO  EM MOBILE*/
 
-@media (max-width:375px) {
-
+@media (max-width: 375px) {
   #nome-rosa,
   .nome-rosa h1 {
     font-size: 50px;
-
-
   }
 }
 
 @media only screen and (max-width: 414px) {
-
   /*NOME BENTO BROETTO MOBILE*/
   #nome-rosa,
   .nome-rosa h1 {
@@ -326,7 +101,6 @@ header {
     margin-top: auto;
     margin-bottom: auto;
   }
-
   /*dev e web responsividade mobile*/
   #dev,
   .dev-rosa h2 {
@@ -334,44 +108,34 @@ header {
     font-size: 23px;
   }
 }
-
 @media (max-width: 1217px) {
-
   #nome-rosa,
   .nome-rosa h1 {
     font-size: 50px;
-
   }
 }
-
 
 /*EU SOU DESENVOLVEDORA FRONT E WEB DESIGN*/
 .dev {
   display: flex;
   /* justify-content: center; Alinha horizontalmente no centro */
-  flex-wrap: wrap;
-  /* Mantém a responsividade */
+  flex-wrap: wrap; /* Mantém a responsividade */
 }
 
 .dev h2 {
-  margin: 0 0px;
-  /* Espaçamento entre os nomes */
+  margin: 0 0px; /* Espaçamento entre os nomes */
   margin-left: 7px;
   padding: -20px;
   font-size: 2em;
   padding-top: 55px;
   margin-bottom: 6px;
-
 }
-
 .dev-branco {
-  color: white
+  color: white;
 }
-
 .dev-rosa {
   color: rgb(216, 128, 199);
 }
-
 
 /*IMAGEM MENINA HOME*/
 
@@ -379,26 +143,19 @@ header {
 .img-container {
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  /* Alinha no canto direito */
-  margin-right: 20px;
-  /* Espaçamento da margem direita */
+  justify-content: flex-end; /* Alinha no canto direito */
+  margin-right: 20px; /* Espaçamento da margem direita */
 }
 
 /* O quadrado por trás da imagem */
 .quadrado {
-  width: 350px;
-  /* Tamanho do quadrado */
-  height: 370px;
-  /*aumenta para baixo*/
+  width: 350px; /* Tamanho do quadrado */
+  height: 370px; /*aumenta para baixo*/
   border: 6px solid rgb(253, 253, 253);
   position: absolute;
-  top: -159px;
-  /* Desloca o quadrado um pouco para baixo */
-  right: -10px;
-  /* Desloca o quadrado um pouco para a esquerda */
-  z-index: 1;
-  /* Coloca o quadrado atrás da imagem */
+  top: -159px; /* Desloca o quadrado um pouco para baixo */
+  right: -10px; /* Desloca o quadrado um pouco para a esquerda */
+  z-index: 1; /* Coloca o quadrado atrás da imagem */
   /* top: -254px; */
   margin-top: -234px;
 }
@@ -411,68 +168,42 @@ header {
 /* Estilo da imagem */
 .img img {
   position: relative;
-  z-index: 2;
-  /* Coloca a imagem na frente do quadrado */
-  width: 440px;
-  /* Tamanho da imagem */
+  z-index: 2; /* Coloca a imagem na frente do quadrado */
+  width: 440px; /* Tamanho da imagem */
   height: 399px;
-  margin-right: 0;
-  /* Remove margens adicionais à direita */
-  margin-top: -490px;
-  /* Ajuste a sobreposição */
+  margin-right: 0; /* Remove margens adicionais à direita */
+  margin-top: -490px; /* Ajuste a sobreposição */
   left: 100px;
-
-
 }
 
 /*MEDIA HOME IMAGE*/
 @media (max-width: 1217px) {
   .img img {
-    visibility: hidden;
-    /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column;
-    /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center;
-    /* Centraliza verticalmente */
+    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
+    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+    align-items: center; /* Centraliza verticalmente */
   }
-
   .quadrado {
-    visibility: hidden;
-    /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column;
-    /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center;
-    /* Centraliza verticalmente */
+    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
+    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+    align-items: center; /* Centraliza verticalmente */
   }
-
-
 }
 
-
-@media (max-width:375px) {
+@media (max-width: 375px) {
   .img img {
-    visibility: hidden;
-    /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column;
-    /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center;
-    /* Centraliza verticalmente */
+    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
+    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+    align-items: center; /* Centraliza verticalmente */
   }
-
   .quadrado {
-    visibility: hidden;
-    /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column;
-    /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center;
-    /* Centraliza verticalmente */
+    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
+    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+    align-items: center; /* Centraliza verticalmente */
   }
-
-
 }
 
 /*FIM DA IMAGEM MENINA HOME*/
-
 
 /*TIRANDO A MARGIN MOBILE*/
 /* Para telas maiores, como desktops */
@@ -494,9 +225,6 @@ header {
   }
 }
 
-
-
-
 /*BOTOES LINKEDIN E GIT HUB HOME*/
 
 /* github e linkedin */
@@ -505,16 +233,13 @@ header {
   text-align: center;
   border-radius: 20px;
   padding: 12px 24px;
-  display: flex;
-  /* Garante que o botão seja exibido corretamente */
-  width: auto;
-  /* Define a largura automática para ajustar ao conteúdo */
+  display: flex; /* Garante que o botão seja exibido corretamente */
+  width: auto; /* Define a largura automática para ajustar ao conteúdo */
   max-width: 80%;
   align-items: center;
   justify-content: center;
   margin-top: 45px;
   z-index: 1px;
-
 }
 
 .social-media a {
@@ -526,14 +251,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   border-radius: 4px;
-  margin-left: 20px;
-  /*da distancia um do outro entre os botoes*/
+  margin-left: 20px; /*da distancia um do outro entre os botoes*/
   z-index: 1;
-
 }
-
 
 /*MUDANÇA DE COR DOS MENUS DO HOUVER*/
 /* deixa os botoes do git e linkedin com animacao de mudar de cor quando passa o mouse em cima */
@@ -542,34 +264,22 @@ a:hover {
   border-radius: 9px;
 }
 
-
-
-
 /*BOTOES LINKEDIN E GITHUB MOBILE*/
 
 @media only screen and (max-width: 768px) {
   .social-media {
-    font-size: 16px;
-    /* Reduz o tamanho da fonte para telas menores */
-    padding: 10px 20px;
-    /* Ajusta o padding para telas menores */
-
-
-
+    font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+    padding: 10px 20px; /* Ajusta o padding para telas menores */
   }
 }
 
 @media only screen and (max-width: 375px) {
   .social-media {
-    font-size: 14px;
-    /* Reduz ainda mais o tamanho da fonte para dispositivos com largura de 375px */
-    padding: 8px 16px;
-    /* Ajusta o padding para dispositivos com largura de 375px */
+    font-size: 14px; /* Reduz ainda mais o tamanho da fonte para dispositivos com largura de 375px */
+    padding: 8px 16px; /* Ajusta o padding para dispositivos com largura de 375px */
     margin-bottom: 10px;
   }
 }
-
-
 
 /*PAG SOBRE MIM*/
 
@@ -583,16 +293,16 @@ a:hover {
 
 /* Container da imagem */
 .onda-divisao-pages {
-  position: relative;
-  /* O container mantém o contexto de posicionamento */
-  overflow: hidden;
-  /* Evita qualquer conteúdo extra criar scroll */
+  position: relative; /* O container mantém o contexto de posicionamento */
+
+  /* width: 100%;  */
+  overflow: hidden; /* Evita qualquer conteúdo extra criar scroll */
+  display: flex;
   width: 99vw;
 }
 
 .onda-divisao-pages img {
-  width: 100%;
-  /* Ocupa toda a largura da tela */
+  width: 100%; /* Ocupa toda a largura da tela */
 }
 
 /*Medias para arrumar a responsividade da onda no mobile*/
@@ -605,7 +315,6 @@ a:hover {
 }
 
 @media only screen and (min-width: 414px) {
-
   /*onda-divisao-pages MOBILE*/
   .onda-divisao-pages {
     padding-top: 123px;
@@ -613,42 +322,34 @@ a:hover {
 }
 
 @media only screen and (min-width: 390px) {
-
   /*onda-divisao-pages MOBILE*/
   .onda-divisao-pages {
     padding-top: 123px;
   }
 }
 
-
 /* Imagem de onda */
 .onda-divisao img {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
-  /* Ajusta a posição vertical da imagem */
-  width: 100%;
-  /* Ocupa toda a largura da página */
-  height: auto;
-  /* Mantém a proporção */
+  bottom: 0; /* Ajusta a posição vertical da imagem */
+  width: 100%; /* Ocupa toda a largura da página */
+  height: auto; /* Mantém a proporção */
 }
 
 /* Opcional: se a imagem for muito alta e o layout for afetado */
 html,
 body {
-  /* height: 100%; */
-  overflow-x: hidden;
-  /* Evita qualquer scroll horizontal */
+  height: 100%;
+  overflow-x: hidden; /* Evita qualquer scroll horizontal */
 }
-
 
 /*PAG SOBRE MIM*/
 /*TITULO SOBRE MIM*/
-.sobre-mim h1 {
+.titulo h1 {
   font-size: 50px;
   color: white;
-
 }
 
 /*DESCRIÇÃO SOBRE MIM*/
@@ -660,24 +361,20 @@ body {
   /* text-align: left; */
   width: 523px;
 }
-
-@media only screen and (max-width:500px) and (min-width: 375px) {
+@media only screen and (max-width: 500px) and (min-width: 375px) {
   .container #paragrafo-sobreMim h3 {
     width: 100px;
   }
-
   .container #paragrafo-sobreMim h3 {
     width: 300px;
   }
 }
 
-@media(max-width: 360px) {
+@media (max-width: 360px) {
   .container #paragrafo-sobreMim h3 {
     width: 325px;
   }
-
 }
-
 
 /*IMAGEM EU SOBRE-MIM PAGE*/
 
@@ -685,26 +382,20 @@ body {
 .container .img-container-sobre {
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  /* Alinha no canto direito */
-  margin-right: 20px;
-  /* Espaçamento da margem direita */
+  justify-content: flex-end; /* Alinha no canto direito */
+  margin-right: 20px; /* Espaçamento da margem direita */
   margin-top: -220px;
 }
 
 /* O quadrado por trás da imagem */
 .quadrado-sobre {
-  width: 350px;
-  /* Tamanho do quadrado */
-  height: 370px;
-  /*aumenta para baixo*/
+  width: 350px; /* Tamanho do quadrado */
+  height: 370px; /*aumenta para baixo*/
   border: 6px solid rgb(253, 253, 253);
   position: absolute;
   top: -172px;
-  right: -10px;
-  /* Desloca o quadrado um pouco para a esquerda */
-  z-index: 1;
-  /* Coloca o quadrado atrás da imagem */
+  right: -10px; /* Desloca o quadrado um pouco para a esquerda */
+  z-index: 1; /* Coloca o quadrado atrás da imagem */
 }
 
 /*SOMBRA ATRÁS DO QUADRADO IMAGEM SOBRE MIM*/
@@ -715,96 +406,63 @@ body {
 /* Estilo da imagem */
 .img-sobre img {
   position: relative;
-  z-index: 2;
-  /* Coloca a imagem na frente do quadrado */
-  width: 330px;
-  /* Tamanho da imagem */
+  z-index: 2; /* Coloca a imagem na frente do quadrado */
+  width: 330px; /* Tamanho da imagem */
   height: 357px;
-  margin-right: 0;
-  /* Remove margens adicionais à direita */
-  margin-top: -165px;
-  /* Ajuste a sobreposição */
+  margin-right: 0; /* Remove margens adicionais à direita */
+  margin-top: -165px; /* Ajuste a sobreposição */
   left: 12px;
-
-
 }
 
 /*MEDIA SOBRE IMAGE*/
 @media (max-width: 1217px) {
   .img-sobre img {
-    visibility: hidden;
-    /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column;
-    /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center;
-    /* Centraliza verticalmente */
+    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
+    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+    align-items: center; /* Centraliza verticalmente */
   }
-
   .quadrado-sobre {
-    visibility: hidden;
-    /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column;
-    /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center;
-    /* Centraliza verticalmente */
+    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
+    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+    align-items: center; /* Centraliza verticalmente */
   }
-
-
 }
 
-
-@media (max-width:375px) {
+@media (max-width: 375px) {
   .img-sobre img {
-    visibility: hidden;
-    /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column;
-    /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center;
-    /* Centraliza verticalmente */
+    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
+    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+    align-items: center; /* Centraliza verticalmente */
   }
-
   .quadrado-sobre {
-    visibility: hidden;
-    /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column;
-    /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center;
-    /* Centraliza verticalmente */
+    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
+    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
+    align-items: center; /* Centraliza verticalmente */
   }
-
-
 }
 
 /*FIM DA IMAGEM MINHA SOBRE PAG*/
 
-
 /*MY SKILLS PRINCIPAIS LINGUAGENS UTILIZADAS.
-  TÍTULO*/
+TÍTULO*/
 #container-mySkills #principais-linguagens h1 {
-  margin-block: 134px;
-  /*dá um espaçamento entre o texto sobre e o titulo.*/
+  margin-block: 134px; /*dá um espaçamento entre o texto sobre e o titulo.*/
 }
-
 
 /*ANIMAÇÃO CARROSSEL SKILLS PAG SOBRE*/
 .container-slide {
   width: 99vw;
-  white-space: nowrap;
-  /*faz com que todas as imagens fiquem na mesma linha*/
-  overflow: hidden;
-  /*tudo o que estiver fora do container-slide, nao vai aparecer.*/
+  white-space: nowrap; /*faz com que todas as imagens fiquem na mesma linha*/
+  overflow: hidden; /*tudo o que estiver fora do container-slide, nao vai aparecer.*/
 }
 
 .paginas-slide img {
-  width: 200px;
-  /*deixa as imagens menor.*/
+  width: 200px; /*deixa as imagens menor.*/
 }
 
 .paginas-slide {
-  display: inline-block;
-  /*faz com que todos fiquem na mesma linha*/
+  display: inline-block; /*faz com que todos fiquem na mesma linha*/
   animation: anima 5s linear infinite;
-
 }
 
 /*ANIMAÇÃO CARROSSEL SKILLS*/
@@ -813,41 +471,29 @@ body {
   0% {
     transform: translateX(0);
   }
-
   100% {
-    transform: translateX(-50%);
-    /*o -50% é para fazer com que ele(paginas-slide) se locomova até metade do tamanho que ele tem.*/
+    transform: translateX(
+      -50%
+    ); /*o -50% é para fazer com que ele(paginas-slide) se locomova até metade do tamanho que ele tem.*/
   }
 }
 
 /*MEDIA QUERYS PARA O CARROSSEL DE MINHAS LINGUAGENS*/
 
 @media only screen and (max-width: 375px) {
-
   /*MY SKILLS PRINCIPAIS LINGUAGENS UTILIZADAS.
-    TÍTULO*/
+TÍTULO*/
   #container-mySkills #principais-linguagens h1 {
-    margin-block: 49px;
-    /*dá um espaçamento entre o texto sobre e o titulo.*/
+    margin-block: 49px; /*dá um espaçamento entre o texto sobre e o titulo.*/
   }
-
   .container-slide {
-    margin-block: -20px;
-    /*altura do carrossel*/
+    margin-block: -20px; /*altura do carrossel*/
     max-width: -526px;
   }
 }
 
-@media (max-width:853px) {
-  .sobre-mim {
-    height: auto !important;
-  }
-}
-
-
 /*PAG PROJETOS CARDS*/
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -855,160 +501,91 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
-
-/*TESTE CARDS PRODUTOS*/
-@media (max-width:600px) {
-  #projetos {
-    height: 252vh !important;
-  }
+/*class flex*/
+.flex {
+  display: flex;
 }
 
-.container-projetos {
-  position: relative;
+section.portfolio {
+  padding: 80px 4%;
+  
+  box-sizing: border-box;
+}
+
+section.portfolio .flex {
+  justify-content: space-around;
+  margin-top: 2rem;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 133px;
-  /* margin-block: 234px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* top: -123px; */
-  top: 3rem;
-  gap: 100px 50px;
-  /*dá um espaçamento entre os cards, um ao lado do outro IMPORTANTE*/
+  width: 100%;
+  gap: 5rem;
 }
 
-.container-projetos .card {
+.img-port {
+  border-radius: 40px;
+  width: 380px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 8s;
+  cursor: pointer;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 350px;
-  height: 300px;
-  border-radius: 20px;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
-  background: #f7f7f7;
-  transition: .5s;
+  text-decoration: none;
 }
 
-.container-projetos .card:hover {
-  height: 400px;
-  /* transform:rotate(-5deg); */
+.img-port:hover {
+  background-position: 100% 100%;
 }
 
-.container-projetos .card .caixaImg {
-  position: absolute;
-  width: 300px;
-  height: 220px;
-  border-radius: 12px;
-  overflow: hidden;
-  top: 20px;
-  transition: .5s;
-}
-
-.container-projetos .card .caixaImg img {
+.overlay{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  justify-content: center;
+  background-color: #000000a2;
+
+  display: flex;
   align-items: center;
-  margin-left: 35px;
-  border-radius: 7px;
-}
-
-.container-projetos .card .conteudo {
-  position: absolute;
-  top: 250px;
-  width: 100%;
-  height: 35px;
-  padding: 0 30px;
-  overflow: hidden;
-  text-align: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffff;
+  opacity: 0;
   transition: .5s;
 }
 
-.container-projetos .card:hover .conteudo {
-  top: 150px;
-  height: 250px;
-}
-
-.container-projetos .card:hover .caixaImg {
-  top: -80px;
-  scale: .75;
-  filter: drop-shadow(20px 0px 15px #440101);
-}
-
-.container-projetos .card .conteudo h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 3rem;
-  color: var(--cor);
-}
-
-.container-projetos .card .conteudo p {
-  color: #333;
-}
-
-.container-projetos .card .conteudo a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  background: var(--cor);
-  color: #fff;
-  border-color: var(--cor);
-  font-weight: 500;
-  filter: drop-shadow(20px 0px 15px var(--cor));
-  transition: .5s;
-}
-
-.container-projetos .card .conteudo a:hover {
-  background: black;
-  transition: .5s;
+.overlay:hover{
+  opacity: 1;
 }
 
 
 
-
-
-/*SOMBRA ATRÁS DOs CARD BLUR*/
-.container-projetos div.card.ice-cream {
-  box-shadow: 50px 20px 80px -30px #d83494;
+/*SOMBRA ATRÁS DO CARD BLUR*/
+main.cards section.img-port.fabricas{
+    box-shadow: 20px 20px 80px -30px  #ea6298;
+}
+main.cards section.img-port.cream{
+    box-shadow: 20px 20px 80px -30px  #38a886;
+}
+main.cards section.img-port.emb{
+    box-shadow: 20px 20px 80px -30px  #41399e;
 }
 
-.container-projetos div.card.tic-tac {
-  box-shadow: 50px 20px 80px -30px #55de2f;
-}
-
-.container-projetos div.card.hub-fabricas {
-  box-shadow: 50px 20px 80px -30px #750192;
-}
-
-/* .container-projetos div.card.shakemelo{
-  box-shadow: 50px 20px 80px -30px  #f39302;
-} */
-
-@media screen and (max-width:600px) {}
 
 
+/*FIM PAG PROJETOS CARDS*/
 
 /*RODAPÉ FOOTER*/
 
 .footer {
   width: 100%;
   height: 100px;
-  background-color: #ef6abe;
-  /*Cor do rodapé*/
-  /* background: linear-gradient(to right, salmon, DarkRed); */
+  background-color: #bf5a72;
   display: flex;
   align-items: center;
   justify-content: center;
   color: rgb(239, 235, 235);
-
 }
 
 .footer img {
@@ -1024,82 +601,61 @@ body {
 
 /*MEDIA QUERYS FOOTER RODAPÉ */
 @media only screen and (max-width: 375px) {
-
   .footer {
     height: 99px;
     /*width: 3px;/*largura do rodapé */
-    display: inline-block;
-    /*faz com que todos fiquem na mesma linha*/
-
+    display: inline-block; /*faz com que todos fiquem na mesma linha*/
   }
-
   .footer p {
     text-align: center;
-    text-transform: capitalize;
-    /*capitalize*/
+    text-transform: capitalize; /*capitalize*/
     font-size: 20px;
   }
 
   .footer img {
     height: 39px;
     /* width: 33px; */
-    display: inline-block;
-    /*faz com que todos fiquem na mesma linha*/
+    display: inline-block; /*faz com que todos fiquem na mesma linha*/
   }
 }
 
-
 @media only screen and (max-width: 414px) {
-
   .footer {
     height: 140px;
     /*width: 3px;/*largura do rodapé */
-    display: inline-block;
-    /*faz com que todos fiquem na mesma linha*/
-
+    display: inline-block; /*faz com que todos fiquem na mesma linha*/
   }
-
   .footer p {
     text-align: center;
-    text-transform: capitalize;
-    /*capitalize*/
+    text-transform: capitalize; /*capitalize*/
     font-size: 25px;
   }
 
   .footer img {
     height: 49px;
     /* width: 33px; */
-    display: inline-block;
-    /*faz com que todos fiquem na mesma linha*/
+    display: inline-block; /*faz com que todos fiquem na mesma linha*/
   }
 }
 
 @media only screen and (max-width: 430px) {
-
   .footer {
     height: 140px;
     /*width: 3px;/*largura do rodapé */
-    display: inline-block;
-    /*faz com que todos fiquem na mesma linha*/
-
+    display: inline-block; /*faz com que todos fiquem na mesma linha*/
   }
-
   .footer p {
     text-align: center;
-    text-transform: capitalize;
-    /*capitalize*/
+    text-transform: capitalize; /*capitalize*/
     font-size: 25px;
   }
 
   .footer img {
     height: 49px;
     /* width: 33px; */
-    display: inline-block;
-    /*faz com que todos fiquem na mesma linha*/
+    display: inline-block; /*faz com que todos fiquem na mesma linha*/
   }
 }
-
-
 
 
 
@@ -1120,33 +676,26 @@ body {
 .content-bottom {
   height: 100vh;
   display: flex;
-
 }
 
 .content-top {
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   color: white;
 }
 
 .content-bottom {
-  background-color: #FF6F91;
+  background-color: #ff6f91;
   color: white;
-
 }
-
-
 
 .wave-container {
   position: relative;
   width: 100%;
-  height: 200px;
-  /* Altura da seção de ondas */
+  height: 200px; /* Altura da seção de ondas */
   overflow: hidden;
   background-color: #000000;
   z-index: -1;
 }
-
-
 
 /* Estilos base para as ondas */
 .wave {
@@ -1154,8 +703,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  /*faz com que as ondas ocupem a horizontal inteira da tela*/
+  height: auto; /*faz com que as ondas ocupem a horizontal inteira da tela*/
   z-index: -1;
 }
 
@@ -1167,8 +715,7 @@ body {
 /* Segunda onda */
 .wave2 {
   animation: wave2-animation 7s infinite ease-in-out;
-  opacity: 0.7;
-  /* Ajuste de opacidade para a segunda onda */
+  opacity: 0.7; /* Ajuste de opacidade para a segunda onda */
 }
 
 /* Animação da primeira onda - movimento de subida e descida */
@@ -1176,12 +723,11 @@ body {
   0% {
     transform: translateY(0);
   }
-
   50% {
-    transform: translateY(15px);
-    /* Aumenta ou diminui para ajustar a intensidade */
+    transform: translateY(
+      15px
+    ); /* Aumenta ou diminui para ajustar a intensidade */
   }
-
   100% {
     transform: translateY(0);
   }
@@ -1192,12 +738,11 @@ body {
   0% {
     transform: translateY(0);
   }
-
   50% {
-    transform: translateY(10px);
-    /* Aumenta ou diminui para ajustar a intensidade */
+    transform: translateY(
+      10px
+    ); /* Aumenta ou diminui para ajustar a intensidade */
   }
-
   100% {
     transform: translateY(0);
   }

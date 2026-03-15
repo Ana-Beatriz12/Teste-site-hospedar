@@ -1,4 +1,3 @@
-
 // scroll evento de rolagem.
 
 // addEventListener serve para falar ao javascript quando um determinado evento acontecer.
