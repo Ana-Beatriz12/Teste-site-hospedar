@@ -1,9 +1,9 @@
 html,
 body {
-  overflow-x: hidden; /*PREVINE O SCROOL HORIZONTAL*/
+  overflow-x: hidden;
+  /*PREVINE O SCROOL HORIZONTAL*/
   scroll-behavior: smooth;
-  
- 
+  box-sizing: border-box;
 }
 
 * {
@@ -14,29 +14,9 @@ body {
 /*HEADER CABEÇALHO*/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
-* {
-  font-family: "Inter", sans-serif;
-}
 
-/*TIRANDO A MARGIN DO PARAGRAFO OLÁ MEU NOME É*/
-/*AQUI AJUSTA A ALTURA DE ESPAÇAMENTO DO PARAGRAFO OLA  EM MOBILE*/
-@media (max-width: 1217px) {
-  .container #paragrafo-ola h2 {
-    margin-bottom: -5px;
-    margin-top: 3px; /*altura entre o cabeçalho eo titulo ola.*/
-  }
-}
-@media only screen and (max-width: 375px) {
-  /*NOME BENTO BROETTO MOBILE*/
-  .container #paragrafo-ola h2 {
-    /* padding: 23px; */
-    margin-top: -23px;
-    margin-bottom: -62px;
-    margin-block: -334px;
-  }
-}
 
-section#home{
+section#home {
   background-color: #1a1a1a;
   padding-top: 100px;
 }
@@ -50,31 +30,18 @@ section#home{
   color: white;
 }
 
-/*AQUI AJUSTA A ALTURA DE ESPAÇAMENTO DO PARAGRAFO OLA  EM MOBILE*/
-
-@media (max-width: 1217px) {
-  .container #paragrafo-ola h2 {
-    margin-bottom: -5px;
-    margin-top: 3px; /*altura entre o cabeçalho eo titulo ola.*/
-  }
-}
-
-@media (max-width: 375px) {
-  .container #paragrafo-ola h2 {
-    margin-bottom: -5px;
-    margin-top: 243px;
-  }
-}
 
 /*TITULOS ANA E  DEV FRONT E WEB DESIGN(ROSA E BRANCO)*/
 .nomes {
   display: flex;
   /* justify-content: center; Alinha horizontalmente no centro */
-  flex-wrap: wrap; /* Mantém a responsividade */
+  flex-wrap: wrap;
+  /* Mantém a responsividade */
 }
 
 .nomes h1 {
-  margin: 0 -7px; /* Espaçamento entre os nomes */
+  margin: 0 -7px;
+  /* Espaçamento entre os nomes */
   padding-top: 35px;
   margin-left: 20px;
   padding: -20px;
@@ -85,60 +52,35 @@ section#home{
 .nome-branco {
   color: white;
 }
+
 /*BENTO BROETTO*/
 .nome-rosa {
   color: rgb(216, 128, 199);
 }
 
-/*AQUI AJUSTA O TITULO BENTO BROETTO  EM MOBILE*/
-
-@media (max-width: 375px) {
-  #nome-rosa,
-  .nome-rosa h1 {
-    font-size: 50px;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  /*NOME BENTO BROETTO MOBILE*/
-  #nome-rosa,
-  .nome-rosa h1 {
-    padding: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  /*dev e web responsividade mobile*/
-  #dev,
-  .dev-rosa h2 {
-    margin-left: -10px;
-    font-size: 23px;
-  }
-}
-@media (max-width: 1217px) {
-  #nome-rosa,
-  .nome-rosa h1 {
-    font-size: 50px;
-  }
-}
 
 /*EU SOU DESENVOLVEDORA FRONT E WEB DESIGN*/
 .dev {
   display: flex;
   /* justify-content: center; Alinha horizontalmente no centro */
-  flex-wrap: wrap; /* Mantém a responsividade */
+  flex-wrap: wrap;
+  /* Mantém a responsividade */
 }
 
 .dev h2 {
-  margin: 0 0px; /* Espaçamento entre os nomes */
+  margin: 0 0px;
+  /* Espaçamento entre os nomes */
   margin-left: 7px;
   padding: -20px;
   font-size: 2em;
   padding-top: 55px;
   margin-bottom: 6px;
 }
+
 .dev-branco {
   color: white;
 }
+
 .dev-rosa {
   color: rgb(216, 128, 199);
 }
@@ -149,19 +91,26 @@ section#home{
 .img-container {
   position: relative;
   display: flex;
-  justify-content: flex-end; /* Alinha no canto direito */
-  margin-right: 20px; /* Espaçamento da margem direita */
+  justify-content: flex-end;
+  /* Alinha no canto direito */
+  margin-right: 20px;
+  /* Espaçamento da margem direita */
 }
 
 /* O quadrado por trás da imagem */
 .quadrado {
-  width: 350px; /* Tamanho do quadrado */
-  height: 370px; /*aumenta para baixo*/
+  width: 350px;
+  /* Tamanho do quadrado */
+  height: 370px;
+  /*aumenta para baixo*/
   border: 6px solid rgb(253, 253, 253);
   position: absolute;
-  top: -159px; /* Desloca o quadrado um pouco para baixo */
-  right: -10px; /* Desloca o quadrado um pouco para a esquerda */
-  z-index: 1; /* Coloca o quadrado atrás da imagem */
+  top: -159px;
+  /* Desloca o quadrado um pouco para baixo */
+  right: -10px;
+  /* Desloca o quadrado um pouco para a esquerda */
+  z-index: 1;
+  /* Coloca o quadrado atrás da imagem */
   /* top: -254px; */
   margin-top: -234px;
 }
@@ -174,62 +123,19 @@ section#home{
 /* Estilo da imagem */
 .img img {
   position: relative;
-  z-index: 2; /* Coloca a imagem na frente do quadrado */
-  width: 440px; /* Tamanho da imagem */
+  z-index: 2;
+  /* Coloca a imagem na frente do quadrado */
+  width: 440px;
+  /* Tamanho da imagem */
   height: 399px;
-  margin-right: 0; /* Remove margens adicionais à direita */
-  margin-top: -490px; /* Ajuste a sobreposição */
+  margin-right: 0;
+  /* Remove margens adicionais à direita */
+  margin-top: -490px;
+  /* Ajuste a sobreposição */
   left: 100px;
 }
 
-/*MEDIA HOME IMAGE*/
-@media (max-width: 1217px) {
-  .img img {
-    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center; /* Centraliza verticalmente */
-  }
-  .quadrado {
-    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center; /* Centraliza verticalmente */
-  }
-}
 
-@media (max-width: 375px) {
-  .img img {
-    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center; /* Centraliza verticalmente */
-  }
-  .quadrado {
-    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center; /* Centraliza verticalmente */
-  }
-}
-
-/*FIM DA IMAGEM MENINA HOME*/
-
-/*TIRANDO A MARGIN MOBILE*/
-/* Para telas maiores, como desktops */
-.img-container {
-  margin: 20px;
-}
-
-/* Para telas menores, como tablets */
-@media (max-width: 768px) {
-  .img-container {
-    margin: 10px;
-  }
-}
-
-/* Para telas de celulares */
-@media (max-width: 480px) {
-  .img-container {
-    margin: 5px;
-  }
-}
 
 /*BOTOES LINKEDIN E GIT HUB HOME*/
 
@@ -239,8 +145,10 @@ section#home{
   text-align: center;
   border-radius: 20px;
   padding: 12px 24px;
-  display: flex; /* Garante que o botão seja exibido corretamente */
-  width: auto; /* Define a largura automática para ajustar ao conteúdo */
+  display: flex;
+  /* Garante que o botão seja exibido corretamente */
+  width: auto;
+  /* Define a largura automática para ajustar ao conteúdo */
   max-width: 80%;
   align-items: center;
   justify-content: center;
@@ -259,7 +167,8 @@ section#home{
   justify-content: center;
   transition: 0.5s ease-in-out;
   border-radius: 4px;
-  margin-left: 20px; /*da distancia um do outro entre os botoes*/
+  margin-left: 20px;
+  /*da distancia um do outro entre os botoes*/
   z-index: 1;
 }
 
@@ -268,23 +177,6 @@ section#home{
 a:hover {
   background-color: rgb(216, 128, 199);
   border-radius: 9px;
-}
-
-/*BOTOES LINKEDIN E GITHUB MOBILE*/
-
-@media only screen and (max-width: 768px) {
-  .social-media {
-    font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
-    padding: 10px 20px; /* Ajusta o padding para telas menores */
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .social-media {
-    font-size: 14px; /* Reduz ainda mais o tamanho da fonte para dispositivos com largura de 375px */
-    padding: 8px 16px; /* Ajusta o padding para dispositivos com largura de 375px */
-    margin-bottom: 10px;
-  }
 }
 
 /*PAG SOBRE MIM*/
@@ -299,56 +191,41 @@ a:hover {
 
 /* Container da imagem */
 .onda-divisao-pages {
-  position: relative; /* O container mantém o contexto de posicionamento */
+  position: relative;
+  /* O container mantém o contexto de posicionamento */
 
   /* width: 100%;  */
-  overflow: hidden; /* Evita qualquer conteúdo extra criar scroll */
+  overflow: hidden;
+  /* Evita qualquer conteúdo extra criar scroll */
   display: flex;
   width: 99vw;
 }
 
 .onda-divisao-pages img {
-  width: 100%; /* Ocupa toda a largura da tela */
+  width: 100%;
+  /* Ocupa toda a largura da tela */
 }
 
-/*Medias para arrumar a responsividade da onda no mobile*/
-@media only screen and (max-width: 375px) {
-  /*onda-divisao-pages MOBILE*/
-
-  .onda-divisao-pages {
-    padding-top: 423px;
-  }
-}
-
-@media only screen and (min-width: 414px) {
-  /*onda-divisao-pages MOBILE*/
-  .onda-divisao-pages {
-    padding-top: 123px;
-  }
-}
-
-@media only screen and (min-width: 390px) {
-  /*onda-divisao-pages MOBILE*/
-  .onda-divisao-pages {
-    padding-top: 123px;
-  }
-}
 
 /* Imagem de onda */
 .onda-divisao img {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0; /* Ajusta a posição vertical da imagem */
-  width: 100%; /* Ocupa toda a largura da página */
-  height: auto; /* Mantém a proporção */
+  bottom: 0;
+  /* Ajusta a posição vertical da imagem */
+  width: 100%;
+  /* Ocupa toda a largura da página */
+  height: auto;
+  /* Mantém a proporção */
 }
 
 /* Opcional: se a imagem for muito alta e o layout for afetado */
 html,
 body {
   height: 100%;
-  overflow-x: hidden; /* Evita qualquer scroll horizontal */
+  overflow-x: hidden;
+  /* Evita qualquer scroll horizontal */
 }
 
 /*PAG SOBRE MIM*/
@@ -367,20 +244,7 @@ body {
   /* text-align: left; */
   width: 523px;
 }
-@media only screen and (max-width: 500px) and (min-width: 375px) {
-  .container #paragrafo-sobreMim h3 {
-    width: 100px;
-  }
-  .container #paragrafo-sobreMim h3 {
-    width: 300px;
-  }
-}
 
-@media (max-width: 360px) {
-  .container #paragrafo-sobreMim h3 {
-    width: 325px;
-  }
-}
 
 /*IMAGEM EU SOBRE-MIM PAGE*/
 
@@ -388,20 +252,26 @@ body {
 .container .img-container-sobre {
   position: relative;
   display: flex;
-  justify-content: flex-end; /* Alinha no canto direito */
-  margin-right: 20px; /* Espaçamento da margem direita */
+  justify-content: flex-end;
+  /* Alinha no canto direito */
+  margin-right: 20px;
+  /* Espaçamento da margem direita */
   margin-top: -220px;
 }
 
 /* O quadrado por trás da imagem */
 .quadrado-sobre {
-  width: 350px; /* Tamanho do quadrado */
-  height: 370px; /*aumenta para baixo*/
+  width: 350px;
+  /* Tamanho do quadrado */
+  height: 370px;
+  /*aumenta para baixo*/
   border: 6px solid rgb(253, 253, 253);
   position: absolute;
   top: -172px;
-  right: -10px; /* Desloca o quadrado um pouco para a esquerda */
-  z-index: 1; /* Coloca o quadrado atrás da imagem */
+  right: -10px;
+  /* Desloca o quadrado um pouco para a esquerda */
+  z-index: 1;
+  /* Coloca o quadrado atrás da imagem */
 }
 
 /*SOMBRA ATRÁS DO QUADRADO IMAGEM SOBRE MIM*/
@@ -412,62 +282,43 @@ body {
 /* Estilo da imagem */
 .img-sobre img {
   position: relative;
-  z-index: 2; /* Coloca a imagem na frente do quadrado */
-  width: 330px; /* Tamanho da imagem */
+  z-index: 2;
+  /* Coloca a imagem na frente do quadrado */
+  width: 330px;
+  /* Tamanho da imagem */
   height: 357px;
-  margin-right: 0; /* Remove margens adicionais à direita */
-  margin-top: -165px; /* Ajuste a sobreposição */
+  margin-right: 0;
+  /* Remove margens adicionais à direita */
+  margin-top: -165px;
+  /* Ajuste a sobreposição */
   left: 12px;
 }
 
-/*MEDIA SOBRE IMAGE*/
-@media (max-width: 1217px) {
-  .img-sobre img {
-    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center; /* Centraliza verticalmente */
-  }
-  .quadrado-sobre {
-    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center; /* Centraliza verticalmente */
-  }
-}
-
-@media (max-width: 375px) {
-  .img-sobre img {
-    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center; /* Centraliza verticalmente */
-  }
-  .quadrado-sobre {
-    visibility: hidden; /*faz com que a imagem suma quando vai para mobile.*/
-    flex-direction: column; /* Quando a tela for pequena, coloca um nome embaixo do outro */
-    align-items: center; /* Centraliza verticalmente */
-  }
-}
-
-/*FIM DA IMAGEM MINHA SOBRE PAG*/
 
 /*MY SKILLS PRINCIPAIS LINGUAGENS UTILIZADAS.
 TÍTULO*/
 #container-mySkills #principais-linguagens h1 {
-  margin-block: 134px; /*dá um espaçamento entre o texto sobre e o titulo.*/
+  margin-block: 134px;
+  /*dá um espaçamento entre o texto sobre e o titulo.*/
 }
 
 /*ANIMAÇÃO CARROSSEL SKILLS PAG SOBRE*/
 .container-slide {
   width: 99vw;
-  white-space: nowrap; /*faz com que todas as imagens fiquem na mesma linha*/
-  overflow: hidden; /*tudo o que estiver fora do container-slide, nao vai aparecer.*/
+  white-space: nowrap;
+  /*faz com que todas as imagens fiquem na mesma linha*/
+  overflow: hidden;
+  /*tudo o que estiver fora do container-slide, nao vai aparecer.*/
 }
 
 .paginas-slide img {
-  width: 200px; /*deixa as imagens menor.*/
+  width: 200px;
+  /*deixa as imagens menor.*/
 }
 
 .paginas-slide {
-  display: inline-block; /*faz com que todos fiquem na mesma linha*/
+  display: inline-block;
+  /*faz com que todos fiquem na mesma linha*/
   animation: anima 5s linear infinite;
 }
 
@@ -477,29 +328,16 @@ TÍTULO*/
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(
-      -50%
-    ); /*o -50% é para fazer com que ele(paginas-slide) se locomova até metade do tamanho que ele tem.*/
-  }
-}
-
-/*MEDIA QUERYS PARA O CARROSSEL DE MINHAS LINGUAGENS*/
-
-@media only screen and (max-width: 375px) {
-  /*MY SKILLS PRINCIPAIS LINGUAGENS UTILIZADAS.
-TÍTULO*/
-  #container-mySkills #principais-linguagens h1 {
-    margin-block: 49px; /*dá um espaçamento entre o texto sobre e o titulo.*/
-  }
-  .container-slide {
-    margin-block: -20px; /*altura do carrossel*/
-    max-width: -526px;
+    transform: translateX(-50%);
+    /*o -50% é para fazer com que ele(paginas-slide) se locomova até metade do tamanho que ele tem.*/
   }
 }
 
 /*PAG PROJETOS CARDS*/
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -569,9 +407,11 @@ section.portfolio .flex {
 main.cards section.img-port.fabricas {
   box-shadow: 20px 20px 80px -30px #ea6298;
 }
+
 main.cards section.img-port.cream {
   box-shadow: 20px 20px 80px -30px #38a886;
 }
+
 main.cards section.img-port.emb {
   box-shadow: 20px 20px 80px -30px #41399e;
 }
@@ -601,64 +441,6 @@ main.cards section.img-port.emb {
   cursor: pointer;
 }
 
-/*MEDIA QUERYS FOOTER RODAPÉ */
-@media only screen and (max-width: 375px) {
-  .footer {
-    height: 99px;
-    /*width: 3px;/*largura do rodapé */
-    display: inline-block; /*faz com que todos fiquem na mesma linha*/
-  }
-  .footer p {
-    text-align: center;
-    text-transform: capitalize; /*capitalize*/
-    font-size: 20px;
-  }
-
-  .footer img {
-    height: 39px;
-    /* width: 33px; */
-    display: inline-block; /*faz com que todos fiquem na mesma linha*/
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .footer {
-    height: 140px;
-    /*width: 3px;/*largura do rodapé */
-    display: inline-block; /*faz com que todos fiquem na mesma linha*/
-  }
-  .footer p {
-    text-align: center;
-    text-transform: capitalize; /*capitalize*/
-    font-size: 25px;
-  }
-
-  .footer img {
-    height: 49px;
-    /* width: 33px; */
-    display: inline-block; /*faz com que todos fiquem na mesma linha*/
-  }
-}
-
-@media only screen and (max-width: 430px) {
-  .footer {
-    height: 140px;
-    /*width: 3px;/*largura do rodapé */
-    display: inline-block; /*faz com que todos fiquem na mesma linha*/
-  }
-  .footer p {
-    text-align: center;
-    text-transform: capitalize; /*capitalize*/
-    font-size: 25px;
-  }
-
-  .footer img {
-    height: 49px;
-    /* width: 33px; */
-    display: inline-block; /*faz com que todos fiquem na mesma linha*/
-  }
-}
-
 /*ANIMAÇÃO ONDAS ;*/
 
 
@@ -686,7 +468,8 @@ main.cards section.img-port.emb {
 .wave-container {
   position: relative;
   width: 100%;
-  height: 200px; /* Altura da seção de ondas */
+  height: 200px;
+  /* Altura da seção de ondas */
   overflow: hidden;
   background-color: #000000;
   z-index: -1;
@@ -698,7 +481,8 @@ main.cards section.img-port.emb {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: auto; /*faz com que as ondas ocupem a horizontal inteira da tela*/
+  height: auto;
+  /*faz com que as ondas ocupem a horizontal inteira da tela*/
   z-index: -1;
 }
 
@@ -710,7 +494,8 @@ main.cards section.img-port.emb {
 /* Segunda onda */
 .wave2 {
   animation: wave2-animation 7s infinite ease-in-out;
-  opacity: 0.7; /* Ajuste de opacidade para a segunda onda */
+  opacity: 0.7;
+  /* Ajuste de opacidade para a segunda onda */
 }
 
 /* Animação da primeira onda - movimento de subida e descida */
@@ -718,11 +503,12 @@ main.cards section.img-port.emb {
   0% {
     transform: translateY(0);
   }
+
   50% {
-    transform: translateY(
-      15px
-    ); /* Aumenta ou diminui para ajustar a intensidade */
+    transform: translateY(15px);
+    /* Aumenta ou diminui para ajustar a intensidade */
   }
+
   100% {
     transform: translateY(0);
   }
@@ -733,11 +519,12 @@ main.cards section.img-port.emb {
   0% {
     transform: translateY(0);
   }
+
   50% {
-    transform: translateY(
-      10px
-    ); /* Aumenta ou diminui para ajustar a intensidade */
+    transform: translateY(10px);
+    /* Aumenta ou diminui para ajustar a intensidade */
   }
+
   100% {
     transform: translateY(0);
   }
