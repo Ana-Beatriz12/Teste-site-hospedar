@@ -309,7 +309,7 @@ TÍTULO*/
 
     .container #paragrafo-sobreMim h3 {
         padding: 0rem 0rem !important;
-        max-width: 12rem !important;
+        /* max-width: 12rem !important; */
     }
 }
 
