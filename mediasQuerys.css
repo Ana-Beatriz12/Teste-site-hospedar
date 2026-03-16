@@ -1,0 +1,340 @@
+/*MEDIAS QUERYS*/
+/*HOME*/
+/*TIRANDO A MARGIN DO PARAGRAFO OLÁ MEU NOME É*/
+/*AQUI AJUSTA A ALTURA DE ESPAÇAMENTO DO PARAGRAFO OLA  EM MOBILE*/
+@media (max-width: 1217px) {
+    .container #paragrafo-ola h2 {
+        margin-bottom: -5px;
+        margin-top: 3px;
+        /*altura entre o cabeçalho eo titulo ola.*/
+    }
+
+    .container #paragrafo-ola h2 {
+        margin-bottom: -5px;
+        margin-top: 3px;
+        /*altura entre o cabeçalho eo titulo ola.*/
+    }
+
+    #nome-rosa,
+    .nome-rosa h1 {
+        font-size: 50px;
+    }
+
+    /*MEDIA HOME IMAGE*/
+    .img img {
+        visibility: hidden;
+        /*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column;
+        /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    .quadrado {
+        visibility: hidden;
+        /*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column;
+        /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    /*MEDIA SOBRE IMAGE*/
+    .img-sobre img {
+        visibility: hidden;
+        /*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column;
+        /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    .quadrado-sobre {
+        visibility: hidden;
+        /*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column;
+        /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+}
+
+@media only screen and (max-width: 375px) {
+/* 
+    #home{
+        height: 100vh !important;
+    } */
+
+    /*NOME BENTO BROETTO MOBILE*/
+    .container #paragrafo-ola h2 {
+        /* padding: 23px; */
+        margin-top: -23px;
+        margin-bottom: -62px;
+        margin-block: -334px;
+    }
+
+    .container #paragrafo-ola h2 {
+        margin-bottom: -5px;
+        margin-top: 3rem;
+    }
+
+    /*TITULO BROETTO EM MOBILE*/
+    #nome-rosa,
+    .nome-rosa h1 {
+        font-size: 50px;
+    }
+
+    /*MEDIA HOME IMAGE*/
+    .img img {
+        visibility: hidden;
+        /*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column;
+        /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    .quadrado {
+        visibility: hidden;
+        /*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column;
+        /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    .social-media {
+        font-size: 14px;
+        /* Reduz ainda mais o tamanho da fonte para dispositivos com largura de 375px */
+        padding: 8px 16px;
+        /* Ajusta o padding para dispositivos com largura de 375px */
+        margin-bottom: 10px;
+    }
+
+    /*onda-divisao-pages MOBILE*/
+
+    .onda-divisao-pages {
+        padding-top: 4rem;
+    }
+
+    .img-sobre img {
+        visibility: hidden;
+        /*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column;
+        /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    .quadrado-sobre {
+        visibility: hidden;
+        /*faz com que a imagem suma quando vai para mobile.*/
+        flex-direction: column;
+        /* Quando a tela for pequena, coloca um nome embaixo do outro */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+
+    /*MY SKILLS PRINCIPAIS LINGUAGENS UTILIZADAS.
+TÍTULO*/
+    #container-mySkills #principais-linguagens h1 {
+        margin-block: 49px;
+        /*dá um espaçamento entre o texto sobre e o titulo.*/
+    }
+
+    .container-slide {
+        margin-block: -20px;
+        /*altura do carrossel*/
+        max-width: -526px;
+    }
+
+    .footer {
+        height: 99px;
+        /*width: 3px;/*largura do rodapé */
+        display: inline-block;
+        /*faz com que todos fiquem na mesma linha*/
+    }
+
+    .footer p {
+        text-align: center;
+        text-transform: capitalize;
+        /*capitalize*/
+        font-size: 20px;
+    }
+
+    .footer img {
+        height: 39px;
+        /* width: 33px; */
+        display: inline-block;
+        /*faz com que todos fiquem na mesma linha*/
+    }
+}
+
+
+@media screen and (max-width:1563px) {
+    .img-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width:2000px) {
+    .container-home {
+        max-width: 100% !important;
+        padding: 0rem 3.5rem;
+    }
+}
+
+
+/*AQUI AJUSTA O TITULO BENTO BROETTO  EM MOBILE*/
+@media only screen and (max-width: 414px) {
+
+    /*NOME BENTO BROETTO MOBILE*/
+    #nome-rosa,
+    .nome-rosa h1 {
+        padding: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    /*dev e web responsividade mobile*/
+    #dev,
+    .dev-rosa h2 {
+        margin-left: -10px;
+        font-size: 23px;
+    }
+
+    .footer {
+        height: 140px;
+        /*width: 3px;/*largura do rodapé */
+        display: inline-block;
+        /*faz com que todos fiquem na mesma linha*/
+    }
+
+    .footer p {
+        text-align: center;
+        text-transform: capitalize;
+        /*capitalize*/
+        font-size: 25px;
+    }
+
+    .footer img {
+        height: 49px;
+        /* width: 33px; */
+        display: inline-block;
+        /*faz com que todos fiquem na mesma linha*/
+    }
+}
+
+/*TIRANDO A MARGIN MOBILE*/
+/* Para telas maiores, como desktops */
+.img-container {
+    margin: 20px;
+}
+
+/* Para telas menores, como tablets */
+@media (max-width: 768px) {
+    .img-container {
+        margin: 10px;
+    }
+
+    /*BOTOES LINKEDIN E GITHUB MOBILE*/
+    .social-media {
+        font-size: 16px;
+        /* Reduz o tamanho da fonte para telas menores */
+        padding: 10px 20px;
+        /* Ajusta o padding para telas menores */
+    }
+}
+
+/* Para telas de celulares */
+@media (max-width: 480px) {
+    .img-container {
+        margin: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 414px) {
+
+    /*onda-divisao-pages MOBILE*/
+    .onda-divisao-pages {
+        padding-top: 123px;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+
+    /*onda-divisao-pages MOBILE*/
+    .onda-divisao-pages {
+        padding-top: 123px;
+    }
+}
+
+/*SOBRE MIM*/
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+    .container-home,
+    .paragrafo-ola h2,
+    .nomes,
+    .dev {
+        padding: 0rem .12rem;
+        text-align: start;
+        margin: 0rem;
+    }
+
+    .nomes h1 {
+        font-size: 1.5rem;
+    }
+
+    .social-media{
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 1rem;
+        margin-top: 1.5rem;
+        
+    }
+
+    .container #paragrafo-sobreMim h3 {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 412px) and (min-width:375px) {
+    .container #paragrafo-ola h2 {
+        margin-top: 5rem;
+    }
+
+    .container #paragrafo-sobreMim h3 {
+        padding: 0rem 0rem !important;
+        max-width: 12rem !important;
+    }
+}
+
+/*FIM DA IMAGEM MINHA SOBRE PAG*/
+
+
+@media only screen and (max-width: 430px) {
+    .footer {
+        height: 140px;
+        /*width: 3px;/*largura do rodapé */
+        display: inline-block;
+        /*faz com que todos fiquem na mesma linha*/
+    }
+
+    .footer p {
+        text-align: center;
+        text-transform: capitalize;
+        /*capitalize*/
+        font-size: 25px;
+    }
+
+    .footer img {
+        height: 49px;
+        /* width: 33px; */
+        display: inline-block;
+        /*faz com que todos fiquem na mesma linha*/
+    }
+}
