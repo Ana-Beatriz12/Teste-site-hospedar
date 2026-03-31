@@ -193,6 +193,7 @@ section#home {
   justify-content: center;
   margin-top: 45px;
   z-index: 1px;
+  margin-bottom: 2rem;
 }
 
 .social-media a {
