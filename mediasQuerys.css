@@ -113,9 +113,9 @@
 
     /*onda-divisao-pages MOBILE*/
 
-    .onda-divisao-pages {
+    /* .onda-divisao-pages {
         padding-top: 4rem;
-    }
+    } */
 
     .img-sobre img {
         visibility: hidden;
@@ -255,21 +255,9 @@ TÍTULO*/
 }
 
 
-@media only screen and (min-width: 414px) {
 
-    /*onda-divisao-pages MOBILE*/
-    .onda-divisao-pages {
-        padding-top: 123px;
-    }
-}
 
-@media only screen and (min-width: 390px) {
 
-    /*onda-divisao-pages MOBILE*/
-    .onda-divisao-pages {
-        padding-top: 123px;
-    }
-}
 
 /*SOBRE MIM*/
 
