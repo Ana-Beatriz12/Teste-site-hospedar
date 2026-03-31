@@ -11,14 +11,51 @@ body {
   font-family: "inter", sans-serif;
 }
 
+/*ESTILIZANDO O SCROLL DA PÁGINA*/
+/* Esconde o fundo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra */
+  background-color: #04091e;
+}
+
+/* Estiliza a parte deslizante (thumb) */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #d250d2;
+}
+
 /*HEADER CABEÇALHO*/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 
-
 section#home {
-  background-color: #1a1a1a;
+  min-height: 100dvh;
   padding-top: 100px;
+
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: none !important;
+}
+
+/*ESTILIZAÇÃO VIDEO-HOME MENINA*/
+.container .back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  top: 3rem;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
 }
 
 /*ola, meu nome é*/
@@ -27,9 +64,9 @@ section#home {
   margin-left: 45px;
   padding-top: 123px;
   margin-bottom: 6px;
-  color: white;
+  color: #04091e;
+  font-weight: 700;
 }
-
 
 /*TITULOS ANA E  DEV FRONT E WEB DESIGN(ROSA E BRANCO)*/
 .nomes {
@@ -46,18 +83,20 @@ section#home {
   margin-left: 20px;
   padding: -20px;
   font-size: 3.6em;
+  font-weight: 700;
 }
 
 /*ANA BEATRIZ*/
 .nome-branco {
-  color: white;
+  /* color: white; */
+  color: #04091e;
 }
 
 /*BENTO BROETTO*/
 .nome-rosa {
-  color: rgb(216, 128, 199);
+  /* color: rgb(216, 128, 199); */
+  color: #d250d2;
 }
-
 
 /*EU SOU DESENVOLVEDORA FRONT E WEB DESIGN*/
 .dev {
@@ -75,14 +114,16 @@ section#home {
   font-size: 2em;
   padding-top: 55px;
   margin-bottom: 6px;
+  font-weight: 700;
 }
 
 .dev-branco {
-  color: white;
+  color: #04091e;
 }
 
 .dev-rosa {
-  color: rgb(216, 128, 199);
+  /* color: rgb(216, 128, 199); */
+  color: #d250d2;
 }
 
 /*IMAGEM MENINA HOME*/
@@ -135,8 +176,6 @@ section#home {
   left: 100px;
 }
 
-
-
 /*BOTOES LINKEDIN E GIT HUB HOME*/
 
 /* github e linkedin */
@@ -175,7 +214,7 @@ section#home {
 /*MUDANÇA DE COR DOS MENUS DO HOUVER*/
 /* deixa os botoes do git e linkedin com animacao de mudar de cor quando passa o mouse em cima */
 a:hover {
-  background-color: rgb(216, 128, 199);
+  background-color: #d250d2;
   border-radius: 9px;
 }
 
@@ -205,7 +244,6 @@ a:hover {
   width: 100%;
   /* Ocupa toda a largura da tela */
 }
-
 
 /* Imagem de onda */
 .onda-divisao img {
@@ -244,7 +282,6 @@ body {
   /* text-align: left; */
   width: 523px;
 }
-
 
 /*IMAGEM EU SOBRE-MIM PAGE*/
 
@@ -293,7 +330,6 @@ body {
   /* Ajuste a sobreposição */
   left: 12px;
 }
-
 
 /*MY SKILLS PRINCIPAIS LINGUAGENS UTILIZADAS.
 TÍTULO*/
@@ -366,7 +402,7 @@ section.portfolio .flex {
 }
 
 .img-port {
-  border-radius: 40px;
+  border-radius: 20px;
   width: 380px;
   height: 460px;
   background-size: cover;
@@ -404,16 +440,44 @@ section.portfolio .flex {
 }
 
 /*SOMBRA ATRÁS DO CARD BLUR*/
-main.cards section.img-port.fabricas {
-  box-shadow: 20px 20px 80px -30px #ea6298;
+.img-port.fabricas {
+  box-shadow: 20px 20px 80px -30px #3b068a;
+  color: #751aff;
+  font-weight: 700;
 }
 
-main.cards section.img-port.cream {
-  box-shadow: 20px 20px 80px -30px #38a886;
+.img-port.cream {
+  box-shadow: 20px 20px 80px -30px #e8a4b7;
+  color: #e8a4b7;
+  font-weight: 700;
 }
 
-main.cards section.img-port.emb {
-  box-shadow: 20px 20px 80px -30px #41399e;
+.img-port.emb {
+  box-shadow: 20px 20px 80px -30px #8f3700;
+  color: #8f3700;
+  font-weight: 700;
+}
+
+/* sombra no rodapé do card */
+.img-port::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #000000f0, transparent);
+  z-index: 1;
+  border-radius: 18px;
+}
+
+.title-cards-projetos {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 0.77rem 0.89rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /*FIM PAG PROJETOS CARDS*/
@@ -443,15 +507,13 @@ main.cards section.img-port.emb {
 
 /*ANIMAÇÃO ONDAS ;*/
 
-
-
 .content-top,
 .content-bottom {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
 }
 
