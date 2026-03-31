@@ -280,9 +280,9 @@ TÍTULO*/
         gap: 3rem;
         justify-content: center;
         align-items: center;
-        margin: 0rem 1rem;
+        margin: 0rem 4rem;
         margin-top: 1.5rem;
-        
+        margin-bottom: 2rem;
     }
 
     .container #paragrafo-sobreMim h3 {
