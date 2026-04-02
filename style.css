@@ -24,6 +24,10 @@ body {
   background-color: #d250d2;
 }
 
+.destaque-texto{
+  color: #d250d2;
+}
+
 /*HEADER CABEÇALHO*/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
@@ -267,6 +271,10 @@ body {
   /* Evita qualquer scroll horizontal */
 }
 
+#sobre {
+  min-height: auto;
+}
+
 /*PAG SOBRE MIM*/
 /*TITULO SOBRE MIM*/
 .titulo h1 {
@@ -322,14 +330,15 @@ body {
   position: relative;
   z-index: 2;
   /* Coloca a imagem na frente do quadrado */
-  width: 330px;
+  width: 335px;
   /* Tamanho da imagem */
-  height: 357px;
+  height: 400px;
   margin-right: 0;
   /* Remove margens adicionais à direita */
-  margin-top: -165px;
+  margin-top: -210px;
   /* Ajuste a sobreposição */
-  left: 12px;
+  left: 13px;
+  overflow: hidden;
 }
 
 /*MY SKILLS PRINCIPAIS LINGUAGENS UTILIZADAS.
@@ -339,38 +348,103 @@ TÍTULO*/
   /*dá um espaçamento entre o texto sobre e o titulo.*/
 }
 
+
 /*ANIMAÇÃO CARROSSEL SKILLS PAG SOBRE*/
 .container-slide {
-  width: 99vw;
-  white-space: nowrap;
-  /*faz com que todas as imagens fiquem na mesma linha*/
-  overflow: hidden;
-  /*tudo o que estiver fora do container-slide, nao vai aparecer.*/
-}
-
-.paginas-slide img {
-  width: 200px;
-  /*deixa as imagens menor.*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  gap: 4rem;
 }
 
 .paginas-slide {
-  display: inline-block;
-  /*faz com que todos fiquem na mesma linha*/
-  animation: anima 5s linear infinite;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-width: 220px;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  /* animation: anima 5s linear infinite; */
 }
 
-/*ANIMAÇÃO CARROSSEL SKILLS*/
+.linguagens-border {
+  min-width: 190px;
+  height: 200px;
+  border-radius: 12%;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: var(--color-fundo);
 
-@keyframes anima {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-    /*o -50% é para fazer com que ele(paginas-slide) se locomova até metade do tamanho que ele tem.*/
-  }
+  transition: all 0.5s ease;
+  position: relative;
+  cursor: pointer;
 }
+
+.linguagens-border img {
+  max-width: 100%;
+  max-height: 103px;
+  object-fit: cover;
+}
+
+.descricao h3 {
+  color: var(--color-White);
+  padding: 1.2rem 0.22rem;
+  font-size: 1.3rem;
+
+  position: relative;
+}
+
+/*ESTILIZAÇÃO TESTE CARDS EFEITO HOLOGRÁFICO HOVER*/
+.linguagens-border::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    var(--cor-hover)
+  );
+  
+}
+/*APLICANDO CORES CONFORME O CARD, EFEITO BRILHO HOVER*/
+/* CORES INDIVIDUAIS */
+.bootstrap { --cor-hover: #690ee9; }
+.javascript { --cor-hover: #f8dc3d; }
+.php { --cor-hover: #6e81b6; }
+.css { --cor-hover: #0074bf; }
+.python { --cor-hover: #ffffff; }
+.html { --cor-hover: #fe4e1d; }
+.mysql { --cor-hover: #3765b0; }
+.oracle { --cor-hover: #e83135; }
+
+
+.linguagens-border:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--cor-hover);
+}
+
+.linguagens-border:hover::before{
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+.linguagens-border {
+  box-shadow: 20px 20px 80px -30px var(--cor-hover);
+  color: var(--cor-hover);
+  font-weight: 700;
+}
+
 
 /*PAG PROJETOS CARDS*/
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
