@@ -490,6 +490,7 @@ section.portfolio .flex {
 
 .img-port:hover {
   background-position: 100% 100%;
+  border-radius: 18px;
 }
 
 .overlay {
@@ -512,6 +513,7 @@ section.portfolio .flex {
 
 .overlay:hover {
   opacity: 1;
+  border-radius: 18px;
 }
 
 /*SOMBRA ATRÁS DO CARD BLUR*/
@@ -530,6 +532,12 @@ section.portfolio .flex {
 .img-port.emb {
   box-shadow: 20px 20px 80px -30px #8f3700;
   color: #8f3700;
+  font-weight: 700;
+}
+
+.img-port.people {
+  box-shadow: 20px 20px 80px -30px #6278f7;
+  color: #6278f7;
   font-weight: 700;
 }
 
@@ -555,6 +563,27 @@ section.portfolio .flex {
   justify-content: flex-end;
 }
 
+.title-cards-projetos::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  display: inline-block;
+}
+
+/*COLOCANDO UM UM BORDER-BOTTOM NA PARTE INFERIOR DOS CARDS DE PROJETOS*/
+.fabricas-title::after{
+  border-bottom: 4px solid #3b068a;
+}
+.cream-title::after{
+  border-bottom: 4px solid #e8a4b7;
+}
+.emb-title::after{
+  border-bottom: 4px solid #8f3700;
+}
+.people-title::after{
+  border-bottom: 4px solid #6278f7;
+}
 /*FIM PAG PROJETOS CARDS*/
 
 /*RODAPÉ FOOTER*/
