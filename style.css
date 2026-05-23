@@ -447,7 +447,6 @@ TÍTULO*/
 
 
 /*PAG PROJETOS CARDS*/
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -456,14 +455,18 @@ TÍTULO*/
   font-family: "Poppins", sans-serif;
 }
 
+/*PAG PROJETOS CARDS*/
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /*class flex*/
 .flex {
   display: flex;
 }
 
 section.portfolio {
+  min-height: 100dvh;
+  font-family: "Poppins", sans-serif;
   padding: 80px 4%;
-
   box-sizing: border-box;
 }
 
@@ -476,9 +479,178 @@ section.portfolio .flex {
   gap: 5rem;
 }
 
-.img-port {
+/*ESTILIZANDO TITULOS E SPANS*/
+.titulo-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.titulo-description h1,
+.titulo-description span {
+  color: #fff;
+}
+.titulo-description h5 {
+  color: #e8a4b7;
+}
+
+.interface h1 {
+  color: #ffff;
+}
+
+/*ESTILIZANDO CONTAINERS PROJETOS DESCRITION*/
+.apresentacao-hubFabricas,
+.apresentacao-iceCream,
+.apresentacao-portfolioEmb,
+.apresentacao-peopleHub {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+/*MUDANDO A DIREÇÃO DOS PROJETOS*/
+.apresentacao-iceCream,
+.apresentacao-peopleHub{
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+.description-projetos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* background-color: #3b068a; */
+  width: 40%;
+  gap: 0.45rem;
+}
+
+.titulos-projetos {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.titulo h3 {
+  color: #e8a4b7;
+}
+
+.button-gitHub button {
+  border: none;
+  background-color: #751aff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 22px;
+  color: #fff;
+  width: 100%;
+  gap: 2rem;
+  flex-direction:column-reverse;
+  display: block;
+  cursor: pointer;
+}
+
+.button-gitHub a {
+ text-decoration: none;
+}
+
+.button-gitHub i {
+  font-size: 25px;
+  z-index: 1;
+}
+
+.descricao-projeto {
+  background: rgba(255, 255, 255, 0.2); /* Fundo branco com 20% de opacidade */
+  backdrop-filter: blur(8px); /* Aplica o desfoque de 8 pixels ao fundo */
+  height: 300px;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 8px 6px 23px 1px rgba(78, 77, 77, 0.294);
+  margin-bottom: 2rem;
+  
+  /*criando barra de rolagem, caso o texto ultrapasse o limite do container*/
+  /* Adiciona a barra de rolagem apenas quando o texto exceder a altura */
+  overflow-y: auto;
+}
+
+.descricao-projeto span {
+  color: #fff;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.markerFabrica{
+  color: #3b068a;
+}
+
+.markerCream{
+  color: #e8a4b7;
+}
+
+.markerEmb{
+  color: #bd510e;
+}
+
+.markerPeople{
+  color: #6278f7;
+}
+
+/*CONTAINERS DE APRESENTAÇÕES SKILLS*/
+.skills {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.linguagens{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  height: 33px;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.linguagens span {
+  background: rgba(255, 255, 255, 0.2); /* Fundo branco com 20% de opacidade */
+  backdrop-filter: blur(8px); /* Aplica o desfoque de 8 pixels ao fundo */
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+
+
+.linguagens.fabrica span:hover{
+ color: #3b068a;
+}
+.linguagens.iceCream span:hover{
+ color: #e8a4b7;
+}
+.linguagens.emb span:hover{
+ color: #bd510e;
+}
+.linguagens.peopleHub span:hover{
+ color: #6278f7;
+}
+
+.apresentacao-hubFabricas .img-port,
+.apresentacao-iceCream .img-port,
+.apresentacao-portfolioEmb .img-port,
+.apresentacao-peopleHub .img-port {
   border-radius: 20px;
-  width: 380px;
+  width: 520px;
   height: 460px;
   background-size: cover;
   background-position: 100% 0%;
@@ -490,7 +662,6 @@ section.portfolio .flex {
 
 .img-port:hover {
   background-position: 100% 100%;
-  border-radius: 18px;
 }
 
 .overlay {
@@ -513,7 +684,6 @@ section.portfolio .flex {
 
 .overlay:hover {
   opacity: 1;
-  border-radius: 18px;
 }
 
 /*SOMBRA ATRÁS DO CARD BLUR*/
@@ -535,7 +705,7 @@ section.portfolio .flex {
   font-weight: 700;
 }
 
-.img-port.people {
+.img-port.peopleHub {
   box-shadow: 20px 20px 80px -30px #6278f7;
   color: #6278f7;
   font-weight: 700;
@@ -563,27 +733,14 @@ section.portfolio .flex {
   justify-content: flex-end;
 }
 
-.title-cards-projetos::after{
+/* .title-cards-projetos::after{
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 18px;
   display: inline-block;
-}
+} */
 
-/*COLOCANDO UM UM BORDER-BOTTOM NA PARTE INFERIOR DOS CARDS DE PROJETOS*/
-.fabricas-title::after{
-  border-bottom: 4px solid #3b068a;
-}
-.cream-title::after{
-  border-bottom: 4px solid #e8a4b7;
-}
-.emb-title::after{
-  border-bottom: 4px solid #8f3700;
-}
-.people-title::after{
-  border-bottom: 4px solid #6278f7;
-}
 /*FIM PAG PROJETOS CARDS*/
 
 /*RODAPÉ FOOTER*/
