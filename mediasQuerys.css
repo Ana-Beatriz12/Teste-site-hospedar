@@ -53,7 +53,7 @@
 }
 
 /* Media query para comuputador */
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 2000px) and (min-width:1000px) {
   .container-home {
     max-width: 100% !important;
     padding: 0rem 3.5rem;
@@ -186,10 +186,7 @@
     font-size: 23px;
   }
 
-  /*ONDA-DIVISAO-PAGES MOBILE*/
-  .onda-divisao-pages {
-    padding-top: 123px;
-  }
+
 
   /*SECTION PROJETOS*/
   main.cards section.card {
@@ -225,10 +222,6 @@
 }
 
 @media only screen and (max-width: 390px) {
-  /*onda-divisao-pages MOBILE*/
-  .onda-divisao-pages {
-    padding-top: 123px;
-  }
 
   /*SECTION PROJETOS*/
   main.cards section.card {
@@ -290,10 +283,7 @@
     margin-bottom: 10px;
   }
 
-  /*ONDA-DIVISAO-PAGES MOBILE*/
-  .onda-divisao-pages {
-    padding-top: 423px;
-  }
+
 
   /* SOBRE-MIM IMAGE */
   .img-sobre img {
@@ -368,7 +358,7 @@ TÍTULO*/
 
   .container #paragrafo-sobreMim h3 {
     padding: 0rem 0rem !important;
-    max-width: 12rem !important;
+
     /* max-width: 12rem !important; */
   }
 }
