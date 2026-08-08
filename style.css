@@ -27,6 +27,57 @@ body {
 .destaque-texto {
   color: #d250d2;
 }
+/*efeito paralax onda divisao pages*/
+.onda-divisao-pages {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  top: -2.5rem;
+}
+
+.onda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100px;
+  background-image: url("onda-divisao-pages.png");
+  background-size: 600px 100px;
+  transform: rotate(180deg);
+}
+
+
+#onda1,
+#onda5{
+  z-index: 999;
+  opacity: 1;
+  background-position-x: 800px;
+}
+#onda2,
+#onda6{
+  z-index: 998;
+  opacity: 0.5;
+  background-position-x: 500px;
+  /* background-image: url("onda3.png"); */
+}
+#onda3,
+#onda7{
+  z-index: 997;
+  opacity: 0.2;
+  background-position-x: 600px;
+  /* background-image: url("onda2.png"); */
+}
+#onda4,
+#onda8{
+  z-index: 996;
+  opacity: 0.8;
+  background-position-x: 100px;
+}
 
 /*HEADER CABEÇALHO*/
 
@@ -35,31 +86,24 @@ body {
 section#home {
   min-height: 100dvh;
   padding-top: 100px;
+  background-attachment: fixed; /*deixa o nosso fundo home fixo para dar o efeito do paralax, ondas*/
 
   width: 100%;
-  position: relative;
+  /* position: relative; */
   display: flex;
   align-items: center;
-  background-color: none !important;
+  background-color: transparent !important;
+  overflow: hidden;
 }
 
 /*ESTILIZAÇÃO VIDEO-HOME MENINA*/
 .container .back-video {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  top: 3rem;
+  inset: 0; /*o inset praticamente zera as propriedades top,right,bottom,left*/
   width: 100%;
-  object-fit: cover;
   height: 100%;
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .back-video {
-    width: auto;
-    height: 100%;
-  }
+  z-index: -1;
+  object-fit: cover;
 }
 
 /*ola, meu nome é*/
@@ -218,9 +262,10 @@ section#home {
 
 /*MUDANÇA DE COR DOS MENUS DO HOUVER*/
 /* deixa os botoes do git e linkedin com animacao de mudar de cor quando passa o mouse em cima */
-a:hover {
+.social-media a:hover {
   background-color: #d250d2;
   border-radius: 9px;
+  color: #fff;
 }
 
 /*PAG SOBRE MIM*/
@@ -273,6 +318,7 @@ body {
 
 #sobre {
   min-height: auto;
+  position: relative;
 }
 
 /*PAG SOBRE MIM*/
@@ -344,20 +390,20 @@ body {
 }
 
 /*button download curriculo sessão sobre-mim*/
-.button-download-curriculo{
+.button-download-curriculo {
   display: flex;
   align-items: start;
   justify-content: start;
   margin: 8px 0px;
 }
 
-.button-download-curriculo a{
+.button-download-curriculo a {
   margin: 0;
   margin-left: 0;
   background-color: #d250d2;
 }
 
-.button-download-curriculo a:hover{
+.button-download-curriculo a:hover {
   background-color: transparent;
   color: #fff;
 }
