@@ -22,5 +22,6 @@ navLinks.forEach(link => {
     });
 });
 
+
 /*menu_white_36dp.svg*/
 /*close_white_36dp.svg*/
