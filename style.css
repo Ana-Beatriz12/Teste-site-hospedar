@@ -24,7 +24,7 @@ body {
   background-color: #d250d2;
 }
 
-.destaque-texto{
+.destaque-texto {
   color: #d250d2;
 }
 
@@ -330,15 +330,36 @@ body {
   position: relative;
   z-index: 2;
   /* Coloca a imagem na frente do quadrado */
-  width: 335px;
+  width: 338px;
   /* Tamanho da imagem */
+  max-width: 100%;
   height: 400px;
   margin-right: 0;
   /* Remove margens adicionais à direita */
-  margin-top: -210px;
+  margin-top: -207px;
+  margin-bottom: 0;
   /* Ajuste a sobreposição */
-  left: 13px;
+  left: 16px;
   overflow: hidden;
+}
+
+/*button download curriculo sessão sobre-mim*/
+.button-download-curriculo{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin: 8px 0px;
+}
+
+.button-download-curriculo a{
+  margin: 0;
+  margin-left: 0;
+  background-color: #d250d2;
+}
+
+.button-download-curriculo a:hover{
+  background-color: transparent;
+  color: #fff;
 }
 
 /*MY SKILLS PRINCIPAIS LINGUAGENS UTILIZADAS.
@@ -347,7 +368,6 @@ TÍTULO*/
   margin-block: 134px;
   /*dá um espaçamento entre o texto sobre e o titulo.*/
 }
-
 
 /*ANIMAÇÃO CARROSSEL SKILLS PAG SOBRE*/
 .container-slide {
@@ -415,26 +435,40 @@ TÍTULO*/
     transparent 30%,
     var(--cor-hover)
   );
-  
 }
 /*APLICANDO CORES CONFORME O CARD, EFEITO BRILHO HOVER*/
 /* CORES INDIVIDUAIS */
-.bootstrap { --cor-hover: #690ee9; }
-.javascript { --cor-hover: #f8dc3d; }
-.php { --cor-hover: #6e81b6; }
-.css { --cor-hover: #0074bf; }
-.python { --cor-hover: #ffffff; }
-.html { --cor-hover: #fe4e1d; }
-.mysql { --cor-hover: #3765b0; }
-.oracle { --cor-hover: #e83135; }
+.bootstrap {
+  --cor-hover: #690ee9;
+}
+.javascript {
+  --cor-hover: #f8dc3d;
+}
+.php {
+  --cor-hover: #6e81b6;
+}
+.css {
+  --cor-hover: #0074bf;
+}
+.python {
+  --cor-hover: #ffffff;
+}
+.html {
+  --cor-hover: #fe4e1d;
+}
+.mysql {
+  --cor-hover: #3765b0;
+}
+.oracle {
+  --cor-hover: #e83135;
+}
 
-
-.linguagens-border:hover{
+.linguagens-border:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px var(--cor-hover);
 }
 
-.linguagens-border:hover::before{
+.linguagens-border:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
 }
@@ -444,7 +478,6 @@ TÍTULO*/
   color: var(--cor-hover);
   font-weight: 700;
 }
-
 
 /*PAG PROJETOS CARDS*/
 
@@ -515,7 +548,7 @@ section.portfolio .flex {
 
 /*MUDANDO A DIREÇÃO DOS PROJETOS*/
 .apresentacao-iceCream,
-.apresentacao-peopleHub{
+.apresentacao-peopleHub {
   flex-direction: row-reverse;
   display: flex;
 }
@@ -538,7 +571,6 @@ section.portfolio .flex {
   margin-bottom: 1rem;
 }
 
-
 .titulo h3 {
   color: #e8a4b7;
 }
@@ -552,13 +584,13 @@ section.portfolio .flex {
   color: #fff;
   width: 100%;
   gap: 2rem;
-  flex-direction:column-reverse;
+  flex-direction: column-reverse;
   display: block;
   cursor: pointer;
 }
 
 .button-gitHub a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .button-gitHub i {
@@ -574,7 +606,7 @@ section.portfolio .flex {
   padding: 1rem 1.5rem;
   box-shadow: 8px 6px 23px 1px rgba(78, 77, 77, 0.294);
   margin-bottom: 2rem;
-  
+
   /*criando barra de rolagem, caso o texto ultrapasse o limite do container*/
   /* Adiciona a barra de rolagem apenas quando o texto exceder a altura */
   overflow-y: auto;
@@ -586,19 +618,19 @@ section.portfolio .flex {
   font-size: 20px;
 }
 
-.markerFabrica{
+.markerFabrica {
   color: #3b068a;
 }
 
-.markerCream{
+.markerCream {
   color: #e8a4b7;
 }
 
-.markerEmb{
+.markerEmb {
   color: #bd510e;
 }
 
-.markerPeople{
+.markerPeople {
   color: #6278f7;
 }
 
@@ -611,7 +643,7 @@ section.portfolio .flex {
   flex-direction: column;
 }
 
-.linguagens{
+.linguagens {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -630,19 +662,17 @@ section.portfolio .flex {
   flex-wrap: wrap;
 }
 
-
-
-.linguagens.fabrica span:hover{
- color: #3b068a;
+.linguagens.fabrica span:hover {
+  color: #3b068a;
 }
-.linguagens.iceCream span:hover{
- color: #e8a4b7;
+.linguagens.iceCream span:hover {
+  color: #e8a4b7;
 }
-.linguagens.emb span:hover{
- color: #bd510e;
+.linguagens.emb span:hover {
+  color: #bd510e;
 }
-.linguagens.peopleHub span:hover{
- color: #6278f7;
+.linguagens.peopleHub span:hover {
+  color: #6278f7;
 }
 
 .apresentacao-hubFabricas .img-port,
